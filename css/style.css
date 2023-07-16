@@ -1,0 +1,560 @@
+/* Table of Content */
+/* ---------------- */
+/* 1. Common */
+/* 2. Menu */
+/* 3. Hero */
+/* 4. About */
+/* 5. Service */
+/* 6. Product */
+/* 7. Team */
+/* 8. Founder */
+/* 9. Blog */
+/* 10. Footer */
+/* ----------------- */
+
+/* Common CSS begin */
+/* ---------------------color variables */
+:root {
+	--white: #ffffff;
+	--orange: #dc143c;
+	--ash: #bdc2c7;
+	--bg: #393a3e;
+}
+
+body {
+	background-color: var(--bg);
+	position: relative;
+}
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box !important;
+}
+a {
+	text-decoration: none !important;
+}
+a:hover {
+	text-decoration: none !important;
+}
+ul,
+ol {
+	list-style: none;
+}
+img {
+	vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+/* -----------------------------text css */
+.section-header p {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 48px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	color: var(--orange);
+}
+.section-header h1 {
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 48px;
+	color: var(--white);
+}
+
+.sub-title {
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	color: var(--white);
+}
+.plain-text {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 26px;
+	color: var(--ash);
+}
+
+/* ------------------button css */
+.my-btn {
+	font-family: "Rubik", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 17px;
+	background-color: var(--orange);
+	padding: 15px 25px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-top: 40px;
+}
+.my-btn a {
+	color: white;
+}
+
+/*-------section background overly */
+.team {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.service-overly,
+.team .team-overly {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(64, 65, 70, 0.9);
+	box-sizing: border-box;
+}
+
+/* --------------margin and padding */
+.about,
+.product,
+.ceo,
+.footer-text {
+	margin: 80px 0;
+}
+.service-overly,
+.team-overly,
+.blog {
+	padding: 80px 0;
+}
+
+/* Common CSS end */
+
+/* Menu CSS begin */
+.navbar-brand {
+	color: var(--white);
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 24px;
+	letter-spacing: 10px;
+}
+.navbar-brand:hover {
+	color: var(--white);
+}
+.menu {
+	padding-top: 35px;
+	background-color: transparent;
+}
+.fixed {
+	transition: 0.8s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #414246;
+	padding-top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.menu-text li a {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 35px;
+	color: var(--white);
+}
+.submenu-text {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 35px;
+	color: var(--ash);
+}
+/* .navbar {
+	background-color: var(--bg) !important;
+} */
+.menu-text li a {
+	margin-left: 14px;
+}
+.menu-text li a:hover {
+	color: var(--orange);
+}
+/* Menu CSS end */
+
+/* Hero CSS begin */
+/* .hero {
+	background: url(../images/heroImage.jpg);
+	background-size: cover;
+	background-position: center center;
+} */
+.hero-pre-title {
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	color: var(--orange);
+}
+.hero-title {
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 70px;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.hero-pad {
+	padding-top: 150px;
+}
+/* Hero CSS end */
+
+/* About CSS begin */
+/* .about {
+	margin: 80px 0;
+} */
+.fa-quote-left,
+.fa-quote-right {
+	color: var(--orange);
+	font-size: 40px;
+}
+.about-text {
+	font-family: "Dosis", sans-serif;
+	font-size: 32px;
+	line-height: 45px;
+	color: var(--white);
+}
+
+.Who-we-are {
+	position: relative;
+	overflow: hidden;
+}
+
+.Who-we-are .about-overly {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 140px;
+	bottom: 0;
+	background: rgba(8, 9, 9, 0.8);
+	padding: 20px;
+	box-sizing: border-box;
+	opacity: 1;
+	transition: 0.6s;
+}
+
+.Who-we-are:hover .about-overly {
+	opacity: 1;
+	top: 0;
+}
+.about-overly p {
+	display: none;
+}
+.about-overly:hover p {
+	display: block;
+	color: var(--white);
+}
+.fa-gear {
+	font-size: 20px;
+	color: var(--orange);
+}
+/* About CSS end */
+
+/* Service CSS begin */
+.service {
+	background: url(../images/b-2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+.fa-pen-to-square {
+	color: var(--orange);
+	font-size: 40px;
+}
+/* Service CSS end */
+
+/* Product CSS begin */
+
+.product-item .product-overly {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(60, 62, 62, 0.8);
+	text-align: center;
+	line-height: normal;
+	opacity: 0;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+}
+
+.product-item:hover .product-overly {
+	opacity: 1;
+}
+.product-overly a {
+	color: var(--white);
+}
+.product-item img {
+	transition: 0.6s ease-in;
+}
+/* Product CSS end */
+
+/* Team CSS begin */
+
+.team {
+	/* margin-top: 80px; */
+	background: url(../images/b-2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.person {
+	position: relative;
+}
+.person-image {
+	display: block;
+	object-fit: cover;
+	/* width: 100%; */
+	/* height: auto; */
+}
+
+.person-overlay {
+	position: absolute;
+	left: 0;
+	/* bottom: 0; */
+	right: 0;
+	top: 100%;
+	background: rgba(12, 12, 12, 0.8);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 0.5s;
+	opacity: 0;
+	text-align: center;
+	color: var(--white);
+}
+.person:hover .person-overlay {
+	opacity: 1;
+	top: 0;
+	height: 100%;
+}
+/* .person:hover .person-overlay {
+} */
+.designation-text {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 26px;
+	text-transform: capitalize;
+	color: var(--orange);
+}
+/* Team CSS end */
+
+/* Founder CSS begin */
+.ceo {
+	/* margin-bottom: 80px; */
+	background: url(../images/bablu.jpg);
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.ceo-info {
+	height: 100%;
+	padding: 80px 100px;
+}
+/* Founder CSS end */
+
+/* Blog CSS begin */
+/* .item {
+	width: 100px;
+	height: 100px;
+	background-color: var(--orange);
+} */
+/* .blog {
+	margin: 80px 0;
+} */
+/* Blog CSS end */
+
+/* Footer CSS begin */
+/* .footer {
+	margin: 80px 0;
+} */
+.footer-text {
+	font-family: "Dosis", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--white);
+}
+.h-border {
+	height: 1px;
+	border-bottom: 1px solid gray;
+}
+.h-border span {
+	display: block;
+	height: 1px;
+	width: 20%;
+	border-bottom: 1px solid red;
+}
+.footer-menu li a {
+	color: var(--ash);
+}
+.copywrite {
+	background-color: #4c4d52;
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 26px;
+	color: var(--ash);
+}
+/* Footer CSS end */
+
+/* Filterizer css */
+.filter_menu ul {
+	text-align: center;
+}
+.filter_menu ul li {
+	display: inline-block;
+	padding: 3px 22px;
+	margin: 0 4px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.fil_active {
+	background: var(--orange) !important;
+	color: var(--white);
+}
+/* vbox css */
+.vbox-container img {
+	width: 50%;
+}
+.vbox-content {
+	margin-top: 70px !important;
+}
+.vbox-next,
+.vbox-prev {
+	display: none !important;
+}
+
+/* slick css */
+
+.blog_dots {
+	text-align: center;
+	position: absolute;
+	bottom: -60px;
+	width: 100%;
+}
+
+.blog_dots li {
+	display: inline-block;
+}
+
+.blog_dots li button {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: none;
+	background: var(--orange);
+	margin: 0 5px;
+	color: transparent;
+	overflow: hidden;
+}
+
+.blog_dots .slick-active button {
+	background: #cfc91d;
+}
+.blog-text {
+	background-color: var(--bg) !important;
+	padding: 30px;
+}
+.blog-small {
+	color: var(--white);
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 26px;
+}
+.blog-small span {
+	margin-right: 20px;
+}
+
+/* preloader css */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	z-index: 9999;
+}
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	animation: rotate 2s infinite linear;
+	top: 50%;
+}
+
+.dot1,
+.dot2 {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	background-color: red;
+	border-radius: 100%;
+	animation: bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+	top: auto;
+	bottom: 0px;
+	animation-delay: -1s;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+}
+/* ------------- */
+/* #particles-js {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+} */
