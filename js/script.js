@@ -37,12 +37,20 @@ $(function ($) {
 	// 	);
 	// });
 
-	// light box js
+	// veno-box js
 	$(".venobox").venobox({
 		spinner: "three-bounce",
 		spinColor: "#02918c",
 		closeColor: "red",
 		// arrowsColor: "#02918c",
+	});
+	// video veno-box js
+	// $(".venobox").venobox();
+	$("#vidBox").VideoPopUp({
+		backgroundColor: "#17212a",
+		opener: "trigger",
+		maxweight: "640",
+		idvideo: "example",
 	});
 
 	//filtarizer js
@@ -63,11 +71,78 @@ $(function ($) {
 		arrows: false,
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 0,
+		speed: 3000,
 		dotsClass: "blog_dots",
+		cssEase: "linear",
+	});
+
+	// partnership slider js
+	$(".clients-slider").slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		speed: 800,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		// speed: 3000,
+		// prevArrow: '<i class="bi bi-chevron-left icon left"></i>',
+		// nextArrow: '<i class="bi bi-chevron-right icon right"></i>',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
+
+	// peb factory gallery popup js
+	$(".factory-container").magnificPopup({
+		delegate: "a",
+		type: "image",
+		gallery: {
+			enabled: true,
+		},
+		removalDelay: 300,
+		mainClass: "mfp-fade",
+	});
+
+	// certificate slider js
+	$(".certificate-main").slick({
+		dots: false,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 4,
+		autoplay: false,
+		slidesToScroll: 1,
+		prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
+		nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
 	});
 });
 
 AOS.init({
 	duration: 1200,
 });
+
+// new VenoBox({
+// 	selector: ".my-video-links",
+// });
