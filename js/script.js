@@ -4,6 +4,22 @@ $(function ($) {
 		$(".preloader").delay(1000).fadeOut(1000);
 	});
 
+ // banner slider js
+ $('.banner').slick({
+	arrows: false,
+    infinite: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    dots: false,
+    autoplay: true,
+    slidesToScroll: 1, 
+    // prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
+    // nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
+  });
+//   }).slickAnimation();
+
+
 	// menu top
 	// var menuTop = $(".menu").offset().top;
 	var menuTop = 70;
