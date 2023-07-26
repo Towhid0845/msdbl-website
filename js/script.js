@@ -1,22 +1,33 @@
 $(function ($) {
+
+
 	// pre loader
 	$(window).on("load", function () {
 		$(".preloader").delay(1000).fadeOut(1000);
 	});
 
- // banner slider js
- $('.banner').slick({
-	arrows: false,
-    infinite: true,
-    speed: 1000,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    dots: false,
-    autoplay: true,
-    slidesToScroll: 1, 
-    // prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
-    // nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
-  });
+
+	// window scroll set
+	// window.onload = function () {
+	// 	window.setTimeout(function () {
+	// 		window.scrollTo(0, 0);
+	// 	}, 10);
+	// };
+
+
+	// banner slider js
+	$('.banner').slick({
+		arrows: false,
+		infinite: true,
+		speed: 1000,
+		autoplaySpeed: 3000,
+		slidesToShow: 1,
+		dots: false,
+		autoplay: true,
+		slidesToScroll: 1, 
+		// prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
+		// nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
+	});
 //   }).slickAnimation();
 
 
@@ -24,11 +35,9 @@ $(function ($) {
 	// var menuTop = $(".menu").offset().top;
 	var menuTop = 70;
 	// alert(menuTop);
-
 	$(window).on("scroll", function () {
 		var scrTop = $(window).scrollTop();
 		//alert(scrTop);
-
 		//menu js
 		if (scrTop > menuTop) {
 			$(".navbar").addClass("fixed");
@@ -43,7 +52,6 @@ $(function ($) {
 		//     $(".backTop").fadeOut(1000);
 		// }
 	});
-
 	// $(".backTop").on("click", function () {
 	// 	$("html,body").animate(
 	// 		{
@@ -53,13 +61,16 @@ $(function ($) {
 	// 	);
 	// });
 
-	// veno-box js
+
+	// venobox js
 	$(".venobox").venobox({
 		spinner: "three-bounce",
 		spinColor: "#02918c",
 		closeColor: "red",
 		// arrowsColor: "#02918c",
 	});
+
+
 	// video veno-box js
 	// $(".venobox").venobox();
 	$("#vidBox").VideoPopUp({
@@ -68,6 +79,7 @@ $(function ($) {
 		maxweight: "640",
 		idvideo: "example",
 	});
+
 
 	//filtarizer js
 	$(".filter-container").filterizr({
@@ -79,6 +91,18 @@ $(function ($) {
 		$(".filter_menu ul li").removeClass("fil_active");
 		$(this).addClass("fil_active");
 	});
+
+
+	//testimonial slider
+	$(".testimonial-slide").slick({
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		arrows: false,
+		dots: true,
+		autoplay: false,
+		dotsClass: "blog_dots",
+	});
+
 
 	//blog slider
 	$(".blog-slide").slick({
@@ -93,6 +117,7 @@ $(function ($) {
 		cssEase: "linear",
 	});
 
+	  
 	// partnership slider js
 	$(".clients-slider").slick({
 		dots: false,
@@ -131,6 +156,7 @@ $(function ($) {
 		],
 	});
 
+
 	// peb factory gallery popup js
 	$(".factory-container").magnificPopup({
 		delegate: "a",
@@ -141,6 +167,7 @@ $(function ($) {
 		removalDelay: 300,
 		mainClass: "mfp-fade",
 	});
+
 
 	// certificate slider js
 	$(".certificate-main").slick({
@@ -153,12 +180,44 @@ $(function ($) {
 		prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
 		nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
 	});
+
+
+	//counter js 
+	$(".counter").counterUp({
+		delay: 10,
+		time: 2000,
+	});
+
+	
+
 });
 
 AOS.init({
 	duration: 1200,
 });
 
-// new VenoBox({
-// 	selector: ".my-video-links",
-// });
+
+function process1Fun() {
+	document.getElementById("process1").style.display = "block";
+	document.getElementById("process2").style.display = "none";
+	document.getElementById("process3").style.display = "none";
+	document.getElementById("process4").style.display = "none";
+}
+function process2Fun() {
+	document.getElementById("process1").style.display = "none";
+	document.getElementById("process2").style.display = "block";
+	document.getElementById("process3").style.display = "none";
+	document.getElementById("process4").style.display = "none";
+}
+function process3Fun() {
+	document.getElementById("process1").style.display = "none";
+	document.getElementById("process2").style.display = "none";
+	document.getElementById("process3").style.display = "block";
+	document.getElementById("process4").style.display = "none";
+}
+function process4Fun() {
+	document.getElementById("process1").style.display = "none";
+	document.getElementById("process2").style.display = "none";
+	document.getElementById("process3").style.display = "none";
+	document.getElementById("process4").style.display = "block";
+}

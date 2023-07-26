@@ -16,10 +16,11 @@
 /* ---------------------color variables */
 :root {
 	--white: #ffffff;
-	--orange: #dc143c;
+	/* --orange: #dc143c; */
+	--orange: #f54a1ffd;
 	--ash: #bdc2c7;
-	--bg: #dc143c;
-	/* --bg: #393a3e; */
+	/* --bg: #dc143c; */
+	--bg: #393a3e;
 	--menu: #414246;
 	--footer: #4c4d52;
 }
@@ -122,18 +123,6 @@ ol {
 	padding: 80px 0;
 }
 
-/* --------------margin and padding */
-/* .about,
-.product,
-.ceo {
-	margin: 80px 0;
-}
-.service-overly,
-.team-overly,
-.blog,
-.footer-text {
-	padding: 80px 0;
-} */
 
 
 
@@ -421,6 +410,7 @@ li.dropdown:hover .dropdown-content {
 	opacity: 1;
 }
 .product-overly a {
+	text-transform: uppercase;
 	color: var(--white);
 }
 .product-item img {
@@ -430,6 +420,143 @@ li.dropdown:hover .dropdown-content {
 	/* display: block; */
 }
 /* Product CSS end */
+
+/* process CSS start */
+.process{
+	/* padding: 80px 0; */
+	background: url(../images/b-2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+/* .process-container ul li{
+	
+} */
+.process-container ul li{
+	margin-right: 20px;
+	background: rgba(255, 255, 255, 0.124);
+	opacity: 0.8;
+	padding: 20px;
+	height: 130px !important;
+	width: 130px !important;
+	position: relative;
+}
+.process-container ul li span{
+	color: var(--white);
+	transition: .5s;
+}
+.process-container ul > li:hover span{
+	color: var(--orange);
+}
+
+.process-container ul li i{
+	display: block;
+	font-size: 50px;
+	/* color: var(--orange); */
+	margin-bottom: 10px;
+}
+#process4, #process3, #process2, #process1{
+	display: none;
+}
+/* .bottom-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+	transition: .8s;
+	display: none;
+} */
+
+.process-container .process-text .plain-text{
+	text-align: justify
+}
+/* process CSS end */
+
+/* testimonial CSS start */
+.testimonial-slide .card{
+	border-radius: 10px;
+	cursor: pointer;
+}
+.testimonial-text .blockquote p{
+	font-size: 15px;
+	color: var(--white);
+}
+.sm-img p{
+	font-size: 15px;
+	color: var(--orange);
+}
+.sm-img img{
+	border-radius: 50%;
+	margin: 0 auto;
+	/* text-align: center; */
+}
+/* testimonial CSS end */
+
+
+/* statistic CSS start */
+.stat{
+	padding: 80px 0;
+	background: var(--footer);
+}
+/* .stat-count{
+	background: url(../images/LOGO/MSDBL.png);
+	background-size: cover;
+		background-position: right bottom !important;
+		background-repeat: no-repeat !important;
+	
+} */
+.stat-count .item-counter {
+	width: 260px;
+    height: 260px;
+    border: 10px solid var(--orange);
+    border-radius: 50%;
+            /* margin: auto; */
+}
+
+.stat-count .item-counter .item-contain{
+	text-align: center;
+}
+
+.item-contain, .position, .time-counter{
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	/* line-height: 48px; */
+	/* padding: 50px 0; */
+	text-transform: capitalize;
+	/* letter-spacing: 10px; */
+	/* color: var(--white); */
+}
+.item-contain h1{
+	color: var(--white);
+	font-size: 36px;
+}
+.item-contain h2 ,.position h2, .time-counter span{
+	color: var(--orange);
+	font-size: 40px;
+	padding: 10px 0 15px;
+}
+.item-contain h3, .position h3, .time-counter h3{
+	color: var(--white);
+	font-size: 20px;
+}
+.position span{
+	color: var(--white);
+}
+.time-counter sup {
+    vertical-align: text-top;
+	color: var(--white);
+}
+.time-counter h3{
+	padding-top: 10px;
+}
+/* statistic CSS end */
+
+
 
 /* Team CSS begin */
 .team {
@@ -512,6 +639,17 @@ li.dropdown:hover .dropdown-content {
 }
 
 /* Founder CSS end */
+
+/* counter css start */
+.counter-part{
+	padding: 80px 0;
+	background-color: var(--orange);
+}
+.counter-part p{
+	color: var(--white);
+}
+/* counter css end */
+
 
 /* Blog CSS begin */
 /* .item {
