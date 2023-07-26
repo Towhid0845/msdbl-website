@@ -17,7 +17,7 @@
 :root {
 	--white: #ffffff;
 	/* --orange: #dc143c; */
-	--orange: #f54a1ffd;
+	--orange: #FA4923;
 	--ash: #bdc2c7;
 	/* --bg: #dc143c; */
 	--bg: #393a3e;
@@ -183,26 +183,75 @@ ol {
 
 
 /* video start */
-.video-part {
+
+.circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: var(--ash);
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  .circle:before,
+  .circle:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	border: 15px solid var(--ash);
+	border-radius: 50%;
+  }
+  
+  .circle:before {
+	animation: ripple 2s linear infinite;
+  }
+  
+  .circle:after {
+	animation: ripple 2s linear 2s infinite;
+  }
+  
+  @keyframes ripple{
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); opacity:.5; }
+	100% { transform: scale(1.4); opacity:0; }
+  }
+
+  video-part {
 	height: 150px;
-	/* width: 250px; */
+	width: 250px;
 	margin: auto;
 	position: relative;
 	overflow: hidden;
 }
-.video-part .video-overly {
+/* .video-part .video-overly {
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 50;
 	width: 80%;
 	background: rgba(99, 96, 96, 0.4);
 	padding: 15px;
 	box-sizing: border-box;
-}
+	color: var(--orange);
+} */
 .fa-play{
+	position: absolute;
+	z-index: 1;
 	font-size: 50px;
+	color: var(--orange);
+	top: 50%;
+	left: 55%;
+	transform: translate(-55%, -55%);
 }
+
+
+
 /* video end */
 .navbar-brand {
 	color: var(--white);
@@ -285,10 +334,18 @@ li.dropdown:hover .dropdown-content {
 
 /* Hero CSS begin */
 .hero {
-	/* background: url(../images/heroImage.jpg); */
-	/* background-size: cover; */
-	/* background-position: center center; */
 	height: 100%;
+	position: relative;
+}
+.hero .menu{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 50;
+	width: 100%;
+	height: 100%;
+	background: rgb(0 0 0 / 43%);
+	box-sizing: border-box;
 }
 .hero-pre-title {
 	font-family: "Dosis", sans-serif;
@@ -383,21 +440,30 @@ li.dropdown:hover .dropdown-content {
 	color: var(--orange);
 	font-size: 40px;
 }
+.service i{
+	font-size: 50px;
+	color: var(--orange);
+}
 /* Service CSS end */
+
+
 
 /* Product CSS begin */
 .product{
 	padding: 80px 0;
 }
-.product-item img{
+.product-img{
 	position: relative;
+}
+.product-item{
+	padding: 5px 10px;
 }
 .product-item .product-overly {
 	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
+	left: 10px;
+	top: 5px;
+	bottom: 5px;
+	right: 10px;
 	background: rgba(60, 62, 62, 0.8);
 	text-align: center;
 	line-height: normal;
@@ -406,7 +472,7 @@ li.dropdown:hover .dropdown-content {
 	-webkit-transition: 0.4s;
 }
 
-.product-item:hover .product-overly {
+.product-item:hover .product-overly{
 	opacity: 1;
 }
 .product-overly a {
@@ -431,9 +497,40 @@ li.dropdown:hover .dropdown-content {
 	background-attachment: fixed;
 	position: relative;
 }
-/* .process-container ul li{
-	
+
+.process .nav-pills .nav-link i{
+	display: block;
+	font-size: 40px;
+	color: var(--orange);
+	padding: 10px 25px;
+	/* margin-bottom: 10px; */
+}
+.process .nav-pills .nav-link{
+	background: rgba(255,255,255,.1);
+	opacity: 0.8;
+}
+.process .nav-pills .nav-link.active{
+	/* color: var(--white); */
+    background-color: var(--orange);
+	opacity: 1;
+}
+.process .nav-pills .nav-link.active i{
+    color: var(--white);
+}
+.process .nav-pills .nav-link{
+    border-radius: 3px;
+}
+.process .nav-pills .nav-item{
+    padding: 5px;
+	transition: 0.5;
+}
+.process .nav-pills .nav-item:hover i{
+    color: var(--white);
+}
+/* .tab-content .tab-pane{
+	color: var(--ash);
 } */
+/*
 .process-container ul li{
 	margin-right: 20px;
 	background: rgba(255, 255, 255, 0.124);
@@ -454,27 +551,25 @@ li.dropdown:hover .dropdown-content {
 .process-container ul li i{
 	display: block;
 	font-size: 50px;
-	/* color: var(--orange); */
+	color: var(--orange);
 	margin-bottom: 10px;
 }
 #process4, #process3, #process2, #process1{
 	display: none;
 }
-/* .bottom-arrow {
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-	transition: .8s;
-	display: none;
-} */
 
 .process-container .process-text .plain-text{
 	text-align: justify
-}
+} */
+
+
+
 /* process CSS end */
+
+
+
+
+
 
 /* testimonial CSS start */
 .testimonial-slide .card{
@@ -501,14 +596,13 @@ li.dropdown:hover .dropdown-content {
 .stat{
 	padding: 80px 0;
 	background: var(--footer);
-}
-/* .stat-count{
-	background: url(../images/LOGO/MSDBL.png);
-	background-size: cover;
-		background-position: right bottom !important;
-		background-repeat: no-repeat !important;
+	background: url(../images/LOGO/logo.svg);
+	background-size: 400px 400px;
+	background-position: right bottom !important;
+	background-repeat:no-repeat !important;
 	
-} */
+}
+
 .stat-count .item-counter {
 	width: 260px;
     height: 260px;
@@ -1128,14 +1222,14 @@ footer .footer-bg .footer-btm a:hover {
 	width: 5px;
 	border-radius: 50%;
 	border: none;
-	background: var(--bg);
+	background: var(--white);
 	margin: 0 5px;
 	color: transparent;
 	overflow: hidden;
 }
 
 .blog_dots .slick-active button {
-	background: var(--white);
+	background: var(--orange);
 }
 
 /* preloader css */
