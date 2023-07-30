@@ -16,10 +16,8 @@
 /* ---------------------color variables */
 :root {
 	--white: #ffffff;
-	/* --orange: #dc143c; */
-	--orange: #FA4923;
+	--orange: #e41b2e;
 	--ash: #bdc2c7;
-	/* --bg: #dc143c; */
 	--bg: #393a3e;
 	--menu: #414246;
 	--footer: #4c4d52;
@@ -29,6 +27,10 @@ body {
 	background-color: var(--bg);
 	position: relative;
 	overflow-x: hidden;
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 26px;
 }
 * {
 	margin: 0;
@@ -71,8 +73,8 @@ ol {
 	line-height: 48px;
 	letter-spacing: 10px;
 	text-transform: uppercase;
-	color: var(--white);
-	/* color: var(--orange); */
+	/* color: var(--white); */
+	color: var(--orange);
 }
 .section-header h1 {
 	font-family: "Dosis", sans-serif;
@@ -119,7 +121,7 @@ ol {
 
 /*-------section background overly */
 .bg-overly {
-	background: rgba(64, 65, 70, .7);
+	background: rgba(64, 65, 70, .8);
 	padding: 80px 0;
 }
 
@@ -344,12 +346,12 @@ li.dropdown:hover .dropdown-content {
 	bottom: 50;
 	width: 100%;
 	height: 100%;
-	background: rgb(0 0 0 / 43%);
+	/* background: rgb(0 0 0 / 43%); */
 	box-sizing: border-box;
 }
 .hero-pre-title {
 	font-family: "Dosis", sans-serif;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 12px;
 	line-height: 24px;
 	letter-spacing: 20px;
@@ -361,8 +363,11 @@ li.dropdown:hover .dropdown-content {
 	font-weight: 500;
 	font-size: 56px;
 	line-height: 70px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: var(--white);
+}
+.hero-title span{
+	text-transform: lowercase;
 }
 
 .hero-pad {
@@ -424,6 +429,9 @@ li.dropdown:hover .dropdown-content {
 	font-size: 30px;
 	color: var(--orange);
 }
+
+
+
 /* About CSS end */
 
 /* Service CSS begin */
@@ -444,6 +452,9 @@ li.dropdown:hover .dropdown-content {
 	font-size: 50px;
 	color: var(--orange);
 }
+.service-text .read-more a{
+	font-size: 16px;
+}
 /* Service CSS end */
 
 
@@ -452,38 +463,96 @@ li.dropdown:hover .dropdown-content {
 .product{
 	padding: 80px 0;
 }
-.product-img{
-	position: relative;
-}
-.product-item{
-	padding: 5px 10px;
-}
-.product-item .product-overly {
+.flip-card {
+	width: 100%;
+	height: 300px;
+	perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(-180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
 	position: absolute;
-	left: 10px;
-	top: 5px;
-	bottom: 5px;
-	right: 10px;
-	background: rgba(60, 62, 62, 0.8);
-	text-align: center;
-	line-height: normal;
-	opacity: 0;
-	transition: 0.4s;
-	-webkit-transition: 0.4s;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	color: var(--white);
+	object-fit: contain;
+  }
+  .flip-card-front img{
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
 }
 
-.product-item:hover .product-overly{
-	opacity: 1;
-}
-.product-overly a {
+.flip-card-back {
+	background-color: var(--orange);
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 5px;
+	padding: 10px 40px 0;
+	box-sizing: border-box;
+  }
+.read-more a{
+	display: block;
 	text-transform: uppercase;
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 48px;
 	color: var(--white);
+	text-decoration: underline !important;
 }
-.product-item img {
-	/* transition: 0.6s ease-in; */
-	object-fit: cover;
-	height: 200px;
-	/* display: block; */
+
+  .product-item .product-img{
+	position: relative;
+  }
+
+  /* .product-item .product-img img{
+	width: 100%;
+	height: 100%;
+  } */
+
+
+  .product-item .product-overly {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: transparent;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	background-color: rgba(8, 9, 9, 0.8);
+} 
+.product-item .product-overly h1{
+	color: var(--orange);
+	padding: 5px 0;
+	font-weight: 700;
+}
+.product-name h1 {
+	font-family: "Dosis", sans-serif;
+	box-sizing: border-box;
+	font-weight: 500;
+	font-size: 22px;
+	padding-bottom: 10px;
+
+	color: var(--bg);
+	text-transform: capitalize;
 }
 /* Product CSS end */
 
@@ -576,13 +645,16 @@ li.dropdown:hover .dropdown-content {
 	border-radius: 10px;
 	cursor: pointer;
 }
+
 .testimonial-text .blockquote p{
 	font-size: 15px;
 	color: var(--white);
 }
 .sm-img p{
+	font-family: "Dosis", sans-serif;
 	font-size: 15px;
-	color: var(--orange);
+	font-weight: 500;
+	color: var(--white);
 }
 .sm-img img{
 	border-radius: 50%;
@@ -596,7 +668,7 @@ li.dropdown:hover .dropdown-content {
 .stat{
 	padding: 80px 0;
 	background: var(--footer);
-	background: url(../images/LOGO/logo.svg);
+	/* background: url(../images/LOGO/logo.svg); */
 	background-size: 400px 400px;
 	background-position: right bottom !important;
 	background-repeat:no-repeat !important;
@@ -685,10 +757,6 @@ li.dropdown:hover .dropdown-content {
 	opacity: 0;
 	text-align: center;
 	color: var(--white);
-	/* line-clamp: 5; */
-	/* word-wrap: normal; */
-
-	/* max-height: 10em; */
 }
 .person:hover .person-overlay {
 	opacity: 1;
@@ -709,27 +777,40 @@ li.dropdown:hover .dropdown-content {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 5;
-	line-clamp: 5;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
 	-webkit-box-orient: vertical;
 }
+.tm-fullName p:first-child{
+	font-weight: 700;
+	padding-top: 20px;
+}
+.tm-mail p:first-child{
+	font-weight: 700;
+	padding-top: 20px;
+}
+.tm-contactNo p:first-child{
+	font-weight: 700;
+	padding-top: 20px;
+}
+
 /* Team CSS end */
 
 /* Founder CSS begin */
 .ceo {
-	height: 600px;
-	width: 100%;
+	background: url(../images/LOGO/MSDBL.png);
+	background-size: 80% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
 	overflow: hidden;
 }
 .ceo-img {
-	/* margin-bottom: 80px; */
 	background: url(../images/masud.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .ceo-info {
-	height: 100%;
-	padding: 80px 100px;
+	padding: 80px;
 }
 
 /* Founder CSS end */
@@ -741,6 +822,14 @@ li.dropdown:hover .dropdown-content {
 }
 .counter-part p{
 	color: var(--white);
+}
+.counter-text{
+	font-family: "Dosis", sans-serif;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 53px;
+	color: var(--white);
+	text-transform: capitalize;
 }
 /* counter css end */
 
