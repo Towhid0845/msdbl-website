@@ -1,0 +1,86 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.navbar-brand {
+	color: $white;
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 20px;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.menu {
+	padding-top: 35px;
+	background-color: transparent;
+}
+
+.fixed {
+	transition: 0.8s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $menu;
+	padding-top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.menu-text li a,
+.dropdown-content li a {
+	font-family: "Source Sans 3", sans-serif;
+  @include font(14px, 500);
+	line-height: 35px;
+	color: $white;
+}
+
+.submenu-text {
+  font-family: "Source Sans 3", sans-serif;
+  @include font(14px, 400);
+	line-height: 35px;
+	color: $text;
+}
+
+.menu-text>li>a {
+	margin-left: 14px;
+	padding: 16px 0;
+}
+
+.menu-text li a:hover {
+	color: $theme;
+}
+
+ul li.dropdown,
+li .dropbtn {
+	display: inline-block;
+}
+
+li ul.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: $menu;
+	min-width: 160px;
+	z-index: 1;
+  
+  li {
+   border-bottom: 1px solid $footer;
+
+   a {
+    color: $text;
+    padding: 2px 0 2px 20px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      background-color: $theme;
+      color: black;
+    }
+   }
+  }
+}
+
+li.dropdown:hover .dropdown-content {
+	display: block;
+}

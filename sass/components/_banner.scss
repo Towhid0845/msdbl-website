@@ -1,0 +1,120 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+
+.circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: $text;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  
+	&:before, &:after {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  border: 15px solid $text;
+	  border-radius: 50%;
+	}
+  
+	&:before {
+	  animation: ripple 2s linear infinite;
+	}
+  
+	&:after {
+	  animation: ripple 2s linear 2s infinite;
+	}
+  }
+  
+  @keyframes ripple {
+	0% {
+	  transform: scale(1);
+	}
+  
+	50% {
+	  transform: scale(1.2);
+	  opacity: .5;
+	}
+  
+	100% {
+	  transform: scale(1.4);
+	  opacity: 0;
+	}
+  }
+  
+  video-part {
+	height: 150px;
+	width: 250px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  /* .video-part .video-overly {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 50;
+	  width: 80%;
+	  background: rgba(99, 96, 96, 0.4);
+	  padding: 15px;
+	  box-sizing: border-box;
+	  color: var(--theme);
+  } */
+  
+  .fa-play {
+	position: absolute;
+	z-index: 1;
+	font-size: 50px;
+	color: $theme;
+	top: 50%;
+	left: 55%;
+	transform: translate(-55%, -55%);
+  }
+  
+.hero {
+	height: 100%;
+	position: relative;
+
+  .menu {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 50;
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+  }
+}
+
+.hero-pre-title {
+	font-family: "Dosis", sans-serif;
+  	@include font(12px, 700);
+	line-height: 24px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	color: $theme;
+}
+
+.hero-title {
+	font-family: "Dosis", sans-serif;
+  	@include font(56px, 500);
+	line-height: 70px;
+	text-transform: capitalize;
+	color: $white;
+  
+  span {
+    text-transform: lowercase;
+  }
+}
+
+.hero-pad {
+	padding-top: 50px;
+}

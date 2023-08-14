@@ -1,0 +1,67 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.stat {
+    padding: 80px 0;
+    background: $footer;
+    background-size: 400px 400px;
+    background-position: right bottom !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  .stat-count .item-counter {
+    width: 240px;
+    height: 240px;
+    border: 10px solid $theme;
+    border-radius: 50%;
+  
+    .item-contain {
+      text-align: center;
+    }
+  }
+  
+  .item-contain, .position, .time-counter {
+    font-family: "Rubik", sans-serif;
+    @include font(20px, 500);
+    text-transform: capitalize;
+  }
+  
+  .item-contain {
+    h1 {
+      color: $white;
+      font-size: 36px;
+    }
+  
+    h2 {
+      color: $theme;
+      font-size: 40px;
+      padding: 10px 0 15px;
+    }
+  }
+  
+  .position h2, .time-counter span {
+    color: $theme;
+    font-size: 40px;
+    padding: 10px 0 15px;
+  }
+  
+  .item-contain h3, .position h3, .time-counter h3 {
+    color: $white;
+    font-size: 20px;
+  }
+  
+  .position span {
+    color: $white;
+  }
+  
+  .time-counter {
+    sup {
+      vertical-align: text-top;
+      color: $white;
+    }
+  
+    h3 {
+      padding-top: 10px;
+    }
+  }
+  

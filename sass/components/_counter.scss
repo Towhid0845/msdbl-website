@@ -1,0 +1,20 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.counter-part {
+    padding: 80px 0;
+    background-color: $theme;
+  
+    p {
+      color: $white;
+    }
+  }
+  
+  .counter-text {
+    font-family: "Dosis", sans-serif;
+    @include font(48px, 300);
+    line-height: 53px;
+    color: $white;
+    text-transform: capitalize;
+  }
+  

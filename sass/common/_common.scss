@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&family=Rubik:wght@400;500;700&family=Source+Sans+3:wght@400;500;700&display=swap');
+
+@import "../variable/variable";
+@import "../mixin/font";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box !important;
+}
+
+a {
+	text-decoration: none !important;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none !important;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	background-color: $bg;
+	overflow-x: hidden;
+	font-family: "Source Sans 3", sans-serif;
+	@include font(15px, 400);
+	line-height: 26px;
+}
+
+.section-header {
+	p {
+		font-family: "Source Sans 3", sans-serif;
+		@include font(14px, 500);
+		line-height: 48px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		color: $theme;
+	}
+
+	h1 {
+		font-family: "Dosis", sans-serif;
+		@include font(40px, 500);
+		line-height: 48px;
+		color: $white;
+		text-transform: capitalize;
+	}
+}
+
+
+.sub-title {
+	font-family: "Rubik", sans-serif;
+	@include font(18px, 500);
+	line-height: 20px;
+	color: $white;
+}
+
+.plain-text {
+	font-family: "Source Sans 3", sans-serif;
+	@include font(15px, 400);
+	line-height: 26px;
+	color: $text;
+}
+
+.my-btn {
+	font-family: "Rubik", sans-serif;
+	@include font(12px, 700);
+	line-height: 17px;
+	background-color: $theme;
+	padding: 15px 25px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-top: 40px;
+
+	a {
+		color: $white;
+	}
+}
+
+.read-more a {
+	display: block;
+	text-transform: capitalize;
+	font-family: "Source Sans 3", sans-serif;
+	@include font(15px, 400);
+	line-height: 48px;
+	color: $white;
+	text-decoration: underline !important;
+}
+
+.bg-overly {
+	background: rgba(64, 65, 70, .8);
+	padding: 80px 0;
+}

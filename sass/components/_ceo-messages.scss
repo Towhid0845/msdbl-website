@@ -1,0 +1,13 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.ceo-img {
+	background: url(../images/masud.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ceo-info {
+	padding: 80px;
+}
+

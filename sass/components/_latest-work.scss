@@ -1,0 +1,43 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.blog {
+    /* padding: 80px 0; */
+    background: url(../images/b-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .blog-text {
+      background-color: $card !important;
+      padding: 30px;
+
+      a:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+  
+  .blog-small {
+    color: $white;
+    font-family: "Source Sans 3", sans-serif;
+    @include font(11px, 400);
+    line-height: 26px;
+  
+    span {
+      margin-right: 20px;
+    }
+  }
+  
+  .card {
+    border: none;
+    border-radius: 0;
+    background-color: card !important;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  

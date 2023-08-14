@@ -1,0 +1,209 @@
+@media (min-width: 1400px) and (max-width: 1799px) {
+  body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; }
+
+  .section-header p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px; }
+  .section-header h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 50px; }
+
+  .sub-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px; }
+
+  .plain-text {
+    font-size: 16px !important;
+    line-height: 28px; }
+
+  .my-btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 40px; }
+
+  .read-more a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px; }
+
+  .bg-overly {
+    background: rgba(64, 65, 70, 0.8);
+    padding: 80px 0; }
+
+  .about {
+    padding: 90px 0; }
+    .about .about-text {
+      font-size: 35px;
+      line-height: 50px; }
+
+  .Who-we-are img {
+    height: 309px; }
+  .Who-we-are .about-overly {
+    top: 210px; }
+    .Who-we-are .about-overly img {
+      width: 50px;
+      height: 50px; }
+    .Who-we-are .about-overly .fa-gear {
+      font-size: 40px; }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 50px; }
+
+  .person img {
+    height: 340px; }
+
+  .flip-card,
+  .flip-card-front img {
+    height: 352px; }
+
+  .flip-card-back .product-icon img {
+    width: 100px; }
+
+  .process .nav-pills .nav-link {
+    border-radius: 5px; }
+    .process .nav-pills .nav-link i {
+      font-size: 45px;
+      padding: 12px 28px; }
+  .process .nav-pills .nav-item {
+    padding: 10px; }
+
+  .sm-img p {
+    font-size: 18px;
+    font-weight: 500; }
+  .sm-img img {
+    width: 100px;
+    height: 100px; }
+
+  .stat-count .item-counter {
+    width: 260px;
+    height: 260px;
+    border: 15px solid #e41b2e; }
+
+  .item-contain,
+  .position,
+  .time-counter {
+    font-size: 22px;
+    font-weight: 500; }
+
+  .item-contain h2 {
+    font-size: 42px;
+    padding: 10px 0 15px; }
+
+  .position h2,
+  .time-counter span {
+    font-size: 42px;
+    padding: 10px 0 15px; }
+
+  .item-contain h3,
+  .position h3,
+  .time-counter h3 {
+    font-size: 22px; }
+
+  .person img {
+    height: 400px; }
+  .person .tm-fullName p:first-child,
+  .person .tm-mail p:first-child,
+  .person .tm-contactNo p:first-child {
+    padding-top: 35px; }
+
+  .designation-text {
+    font-size: 14px;
+    font-weight: 400; }
+
+  .counter-part {
+    padding: 85px 0; }
+
+  .counter-text {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 55px; }
+
+  .blog-small {
+    font-size: 12px;
+    font-weight: 400; }
+    .blog-small span {
+      margin-right: 25px; }
+
+  .card-img-top {
+    height: 235px; }
+
+  .our-clients {
+    padding: 85px 0; }
+    .our-clients .img {
+      height: 176px;
+      margin: 0 14px;
+      padding: 16px; }
+
+  .factory {
+    padding: 85px 0; }
+    .factory .factory-item .image {
+      height: 270px; }
+      .factory .factory-item .image .overlay i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px; }
+    .factory .factory-item.big-item .image {
+      height: 490px; }
+
+  .news-item .image {
+    height: 330px; }
+    .news-item .image .date span {
+      font-size: 20px;
+      font-weight: 700;
+      width: 80px;
+      height: 80px;
+      padding: 15px;
+      line-height: 20px; }
+  .news-item .text .title {
+    font-size: 22px;
+    font-weight: 600; }
+
+  .social-item .image {
+    height: 316px; }
+  .social-item .plain-text {
+    padding: 30px; }
+    .social-item .plain-text .read-more {
+      margin-top: 20px;
+      padding-top: 14px; }
+
+  .footer-about .social i {
+    font-size: 24px; }
+
+  footer .footer-bg {
+    padding: 85px 0 0px 0; }
+    footer .footer-bg .footer-about img {
+      width: 180px; }
+    footer .footer-bg .getin-touch ul li p span {
+      font-size: 18px;
+      font-weight: 600; }
+    footer .footer-bg .getin-touch ul li i {
+      font-size: 24px; }
+    footer .footer-bg .footer-btm {
+      padding: 20px 0;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1); }
+      footer .footer-bg .footer-btm p {
+        font-size: 18px; } }
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .Who-we-are img {
+    height: 265px; }
+  .Who-we-are .about-overly {
+    top: 180px; }
+    .Who-we-are .about-overly img {
+      width: 40px;
+      height: 40px; }
+
+  .person img {
+    height: 340px; } }
+
+/*# sourceMappingURL=responsive.css.map */

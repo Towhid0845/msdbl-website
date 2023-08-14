@@ -1,0 +1,26 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.service {
+	background: url(../images/b-2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+
+  i {
+   font-size: 50px;
+   color: $theme;
+  }
+  .service-text .read-more a {
+    font-size: 16px;
+  }
+}
+
+.fa-pen-to-square {
+	color: $theme;
+	font-size: 40px;
+}
+
+

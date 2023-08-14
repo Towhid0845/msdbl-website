@@ -1,0 +1,382 @@
+@import "./variable/variable";
+@import "./mixin/font";
+
+@media(min-width:1400px) and (max-width:1799px) {
+
+  // start of common responsive
+
+  body {
+    @include font(16px, 400);
+    line-height: 28px;
+  }
+
+  .section-header {
+    p {
+      @include font(15px, 500);
+      line-height: 50px;
+    }
+
+    h1 {
+      @include font(45px, 500);
+      line-height: 50px;
+    }
+  }
+
+  .sub-title {
+    @include font(22px, 500);
+    line-height: 22px;
+  }
+
+  .plain-text {
+    font-size: 16px !important;
+    line-height: 28px;
+  }
+
+  .my-btn {
+    @include font(14px, 700);
+    line-height: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+
+  .read-more a {
+    @include font(16px, 400);
+    line-height: 50px;
+  }
+
+  .bg-overly {
+    background: rgba(64, 65, 70, .8);
+    padding: 80px 0;
+  }
+
+  // end of common
+
+  // start of about responsive 
+  .about {
+    padding: 90px 0;
+
+    .about-text {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+  }
+
+  .Who-we-are {
+    img {
+      height: 309px;
+    }
+
+    .about-overly {
+      top: 210px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .fa-gear {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 50px;
+  }
+
+  // end of about
+
+  // start of team responsive
+  .person {
+    img {
+      height: 340px;
+    }
+  }
+
+  // end of team
+
+  // start of product responsive
+  .flip-card,
+  .flip-card-front img {
+    height: 352px;
+  }
+
+  .flip-card-back .product-icon img {
+    width: 100px;
+  }
+
+  // end of product
+
+  // start of process responsive
+
+  .process {
+    .nav-pills {
+      .nav-link {
+        border-radius: 5px;
+
+        i {
+          font-size: 45px;
+          padding: 12px 28px;
+        }
+      }
+
+      .nav-item {
+        padding: 10px;
+      }
+    }
+
+
+  }
+
+  // end of process
+
+  // start of testimonial responsive  
+  .sm-img {
+    p {
+      @include font(18px, 500);
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  // end of testimonial
+
+  // start ot stats responsive
+
+  .stat-count .item-counter {
+    width: 260px;
+    height: 260px;
+    border: 15px solid $theme;
+  }
+
+  .item-contain,
+  .position,
+  .time-counter {
+    @include font(22px, 500);
+  }
+
+  .item-contain {
+    h2 {
+      font-size: 42px;
+      padding: 10px 0 15px;
+    }
+  }
+
+  .position h2,
+  .time-counter span {
+    font-size: 42px;
+    padding: 10px 0 15px;
+  }
+
+  .item-contain h3,
+  .position h3,
+  .time-counter h3 {
+    font-size: 22px;
+  }
+
+  // end of statistics
+
+  // team start
+  .person {
+    img {
+      height: 400px;
+    }
+
+    .tm-fullName p:first-child,
+    .tm-mail p:first-child,
+    .tm-contactNo p:first-child {
+      padding-top: 35px;
+    }
+  }
+
+  .designation-text {
+    @include font(14px, 400);
+  }
+
+  // team end
+
+  // start of counter responsive
+  .counter-part {
+    padding: 85px 0;
+  }
+
+  .counter-text {
+    @include font(50px, 300);
+    line-height: 55px;
+  }
+
+  // end of counter
+
+  // start of latest work responsive
+
+
+  .blog-small {
+    @include font(12px, 400);
+
+    span {
+      margin-right: 25px;
+    }
+  }
+
+  .card-img-top {
+
+    height: 235px;
+  }
+
+  // end of latest work
+
+  // start of client responsive
+  .our-clients {
+    padding: 85px 0;
+
+    .img {
+      height: 176px;
+      margin: 0 14px;
+      padding: 16px;
+    }
+  }
+  // end of client
+
+  // start of factory responsive
+  
+.factory {
+  padding: 85px 0;
+
+  .factory-item {
+    .image {
+      height: 270px;
+
+      .overlay {
+        i {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  
+    &.big-item .image {
+      height: 490px;
+    }
+  }
+}
+
+// end of factory
+
+// start of news responsive
+.news-item {
+  .image {
+    height: 330px;
+
+    .date {
+      span {
+        @include font(20px, 700);
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .text {
+    .title {
+      @include font(22px, 600);
+    }
+  }
+}
+// end of news
+
+// start of social responsive
+.social-item {
+
+  .image {
+    height: 316px;
+  }
+
+  .plain-text {
+    padding: 30px;
+
+    .read-more {
+      margin-top: 20px;
+      padding-top: 14px;
+    }
+  }
+}
+// end of social
+
+// start of footer responsive
+.footer-about .social i{
+  font-size: 24px;
+}
+footer .footer-bg {
+  padding: 85px 0 0px 0;
+
+  .footer-about {
+    img {
+      width: 180px;
+    }
+  }
+  
+  .getin-touch ul li {
+    p {
+      span {
+        @include font(18px, 600);
+      }
+    }
+
+    i {
+      font-size: 24px;
+    }
+  }
+
+  .footer-btm {
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+
+  // about start
+  .Who-we-are {
+    img {
+      height: 265px;
+    }
+
+    .about-overly {
+      top: 180px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  //about end
+
+  // team start
+  .person {
+    img {
+      height: 340px;
+    }
+  }
+
+  // team end
+}
+
+@media(min-width:992px) and (max-width:1199px) {}
