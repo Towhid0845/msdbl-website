@@ -1,6 +1,362 @@
 @import "./variable/variable";
 @import "./mixin/font";
 
+// max device responsive
+@media (min-width:1800px) {
+
+  // start of common responsive
+
+  body {
+    @include font(16px, 400);
+    line-height: 28px;
+  }
+
+  .section-header {
+    p {
+      @include font(16px, 500);
+      line-height: 50px;
+    }
+
+    h1 {
+      @include font(50px, 500);
+      line-height: 55px;
+    }
+  }
+
+  .sub-title {
+    @include font(24px, 500);
+    line-height: 24px;
+  }
+
+  .plain-text {
+    font-size: 16px !important;
+    line-height: 28px;
+  }
+
+  .my-btn {
+    @include font(15px, 700);
+    line-height: 20px;
+    padding: 16px 34px;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+
+  .read-more a {
+    @include font(18px, 400);
+    line-height: 50px;
+  }
+
+  .bg-overly {
+    background: rgba(64, 65, 70, .8);
+    padding: 90px 0;
+  }
+
+  // end of common
+
+  // about part start 
+  .about {
+    padding: 90px 0;
+
+    .about-text {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+  }
+
+  .Who-we-are {
+    img {
+      height: 309px;
+    }
+
+    .about-overly {
+      top: 210px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .fa-gear {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 50px;
+  }
+
+  // end of about
+
+  // product part start
+  .flip-card,
+  .flip-card-front img {
+    height: 352px;
+  }
+
+  .flip-card-back .product-icon img {
+    width: 100px;
+  }
+
+  // end of product
+
+  // process part start
+
+  .process {
+    .nav-pills {
+      .nav-link {
+        border-radius: 5px;
+        width: 170px;
+        height: 150px;
+
+        i {
+          font-size: 50px;
+          padding-bottom: 15px;
+        }
+
+        .plain-text {
+          line-height: 22px;
+          font-size: 18px !important;
+        }
+      }
+
+      .nav-item {
+        padding: 15px;
+      }
+    }
+  }
+
+  // end of process
+
+  // start of testimonial responsive  
+  .sm-img {
+    p {
+      @include font(20px, 500);
+    }
+
+    img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  // end of testimonial
+
+  // start ot stats responsive
+
+  .stat-count .item-counter {
+    width: 260px;
+    height: 260px;
+    border: 15px solid $theme;
+  }
+
+  .item-contain,
+  .position,
+  .time-counter {
+    @include font(22px, 500);
+  }
+
+  .item-contain {
+    h2 {
+      font-size: 42px;
+      padding: 10px 0 15px;
+    }
+  }
+
+  .position h2,
+  .time-counter span {
+    font-size: 42px;
+    padding: 10px 0 15px;
+  }
+
+  .item-contain h3,
+  .position h3,
+  .time-counter h3 {
+    font-size: 22px;
+  }
+
+  // end of statistics
+
+  // team start
+  .person {
+    img {
+      height: 400px;
+    }
+
+    .tm-fullName p:first-child,
+    .tm-mail p:first-child,
+    .tm-contactNo p:first-child {
+      padding-top: 50px;
+      font-size: 20px
+    }
+
+    .tm-fullName p:first-child,
+    .tm-mail p:first-child,
+    .tm-contactNo p:nth-child(2) {
+      font-size: 20px
+    }
+  }
+
+  .designation-text {
+    @include font(16px, 400);
+  }
+
+  // team end
+
+  // start of counter responsive
+  .counter-part {
+    padding: 90px 0;
+  }
+
+  .counter-text {
+    @include font(50px, 300);
+    line-height: 55px;
+  }
+
+  // end of counter
+
+  // latest work part start
+
+  .blog-small {
+    @include font(14px, 400);
+
+    span {
+      margin-right: 25px;
+    }
+  }
+
+  .card-img-top {
+
+    height: 306px;
+  }
+
+  // end of latest work
+
+  // client part start
+  .our-clients {
+    padding: 85px 0;
+
+    .img {
+      height: 176px;
+      margin: 0 14px;
+      padding: 16px;
+    }
+  }
+
+  // end of client
+
+  // start of factory responsive
+
+  .factory {
+    padding: 85px 0;
+
+    .factory-item {
+      .image {
+        height: 270px;
+
+        .overlay {
+          i {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+          }
+        }
+      }
+
+      &.big-item .image {
+        height: 490px;
+      }
+    }
+  }
+
+  // end of factory
+
+  // start of news responsive
+  .news-item {
+    .image {
+      height: 330px;
+
+      .date {
+        span {
+          @include font(20px, 700);
+          width: 80px;
+          height: 80px;
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .text {
+      .title {
+        @include font(22px, 600);
+      }
+    }
+  }
+
+  // end of news
+
+  // start of social responsive
+  .social-item {
+
+    .image {
+      height: 316px;
+    }
+
+    .plain-text {
+      padding: 30px;
+
+      .read-more {
+        margin-top: 20px;
+        padding-top: 14px;
+      }
+    }
+  }
+
+  // end of social
+
+  // start of footer responsive
+  .footer-about .social i {
+    font-size: 24px;
+  }
+
+  footer .footer-bg {
+    padding: 85px 0 0px 0;
+
+    .footer-about {
+      img {
+        width: 180px;
+      }
+    }
+
+    .getin-touch ul li {
+      p {
+        span {
+          @include font(18px, 600);
+        }
+      }
+
+      i {
+        font-size: 24px;
+      }
+    }
+
+    .footer-btm {
+      padding: 20px 0;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+// extra large device responsive
 @media(min-width:1400px) and (max-width:1799px) {
 
   // start of common responsive
@@ -54,7 +410,7 @@
 
   // start of about responsive 
   .about {
-    padding: 90px 0;
+    padding: 85px 0;
 
     .about-text {
       font-size: 35px;
@@ -84,19 +440,11 @@
 
   .fa-quote-left,
   .fa-quote-right {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   // end of about
 
-  // start of team responsive
-  .person {
-    img {
-      height: 340px;
-    }
-  }
-
-  // end of team
 
   // start of product responsive
   .flip-card,
@@ -116,19 +464,24 @@
     .nav-pills {
       .nav-link {
         border-radius: 5px;
+        width: 150px;
+        height: 130px;
 
         i {
-          font-size: 45px;
-          padding: 12px 28px;
+          font-size: 40px;
+          padding-bottom: 12px;
+        }
+
+        .plain-text {
+          line-height: 20px;
+          font-size: 16px !important;
         }
       }
 
       .nav-item {
-        padding: 10px;
+        padding: 12px;
       }
     }
-
-
   }
 
   // end of process
@@ -140,8 +493,8 @@
     }
 
     img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
     }
   }
 
@@ -150,40 +503,42 @@
   // start ot stats responsive
 
   .stat-count .item-counter {
-    width: 260px;
-    height: 260px;
-    border: 15px solid $theme;
+    width: 250px;
+    height: 250px;
+    border: 12px solid $theme;
   }
 
   .item-contain,
   .position,
   .time-counter {
-    @include font(22px, 500);
+    @include font(20px, 500);
   }
 
   .item-contain {
     h2 {
-      font-size: 42px;
+      font-size: 40px;
       padding: 10px 0 15px;
     }
   }
 
   .position h2,
   .time-counter span {
-    font-size: 42px;
+    font-size: 40px;
     padding: 10px 0 15px;
   }
 
   .item-contain h3,
   .position h3,
   .time-counter h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   // end of statistics
 
   // team start
   .person {
+    margin: 0 10px;
+
     img {
       height: 400px;
     }
@@ -191,12 +546,19 @@
     .tm-fullName p:first-child,
     .tm-mail p:first-child,
     .tm-contactNo p:first-child {
-      padding-top: 35px;
+      padding-top: 40px;
+      font-size: 18px
+    }
+
+    .tm-fullName p:first-child,
+    .tm-mail p:first-child,
+    .tm-contactNo p:nth-child(2) {
+      font-size: 18px
     }
   }
 
   .designation-text {
-    @include font(14px, 400);
+    @include font(15px, 400);
   }
 
   // team end
@@ -206,18 +568,12 @@
     padding: 85px 0;
   }
 
-  .counter-text {
-    @include font(50px, 300);
-    line-height: 55px;
-  }
-
   // end of counter
 
-  // start of latest work responsive
-
+  // latest work part start
 
   .blog-small {
-    @include font(12px, 400);
+    @include font(13px, 400);
 
     span {
       margin-right: 25px;
@@ -225,7 +581,6 @@
   }
 
   .card-img-top {
-
     height: 235px;
   }
 
@@ -241,114 +596,119 @@
       padding: 16px;
     }
   }
+
   // end of client
 
   // start of factory responsive
-  
-.factory {
-  padding: 85px 0;
 
-  .factory-item {
+  .factory {
+    padding: 85px 0;
+
+    .factory-item {
+      .image {
+        height: 270px;
+
+        .overlay {
+          i {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+          }
+        }
+      }
+
+      &.big-item .image {
+        height: 490px;
+      }
+    }
+  }
+
+  // end of factory
+
+  // start of news responsive
+  .news-item {
     .image {
-      height: 270px;
+      height: 330px;
 
-      .overlay {
-        i {
-          width: 50px;
-          height: 50px;
-          line-height: 50px;
+      .date {
+        span {
+          @include font(20px, 700);
+          width: 80px;
+          height: 80px;
+          padding: 15px;
+          line-height: 20px;
         }
       }
     }
-  
-    &.big-item .image {
-      height: 490px;
-    }
-  }
-}
 
-// end of factory
-
-// start of news responsive
-.news-item {
-  .image {
-    height: 330px;
-
-    .date {
-      span {
-        @include font(20px, 700);
-        width: 80px;
-        height: 80px;
-        padding: 15px;
-        line-height: 20px;
+    .text {
+      .title {
+        @include font(22px, 600);
       }
     }
   }
 
-  .text {
-    .title {
-      @include font(22px, 600);
+  // end of news
+
+  // start of social responsive
+  .social-item {
+
+    .image {
+      height: 316px;
+    }
+
+    .plain-text {
+      padding: 30px;
+
+      .read-more {
+        margin-top: 20px;
+        padding-top: 14px;
+      }
     }
   }
-}
-// end of news
 
-// start of social responsive
-.social-item {
+  // end of social
 
-  .image {
-    height: 316px;
+  // start of footer responsive
+  .footer-about .social i {
+    font-size: 24px;
   }
 
-  .plain-text {
-    padding: 30px;
+  footer .footer-bg {
+    padding: 85px 0 0px 0;
 
-    .read-more {
-      margin-top: 20px;
-      padding-top: 14px;
-    }
-  }
-}
-// end of social
-
-// start of footer responsive
-.footer-about .social i{
-  font-size: 24px;
-}
-footer .footer-bg {
-  padding: 85px 0 0px 0;
-
-  .footer-about {
-    img {
-      width: 180px;
-    }
-  }
-  
-  .getin-touch ul li {
-    p {
-      span {
-        @include font(18px, 600);
+    .footer-about {
+      img {
+        width: 180px;
       }
     }
 
-    i {
-      font-size: 24px;
+    .getin-touch ul li {
+      p {
+        span {
+          @include font(18px, 600);
+        }
+      }
+
+      i {
+        font-size: 24px;
+      }
+    }
+
+    .footer-btm {
+      padding: 20px 0;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      p {
+        font-size: 18px;
+      }
     }
   }
 
-  .footer-btm {
-    padding: 20px 0;
-    margin-top: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-    p {
-      font-size: 18px;
-    }
-  }
 }
 
-}
-
+// extra large device responsive
 @media(min-width:1200px) and (max-width:1399px) {
 
   // about start
@@ -377,6 +737,424 @@ footer .footer-bg {
   }
 
   // team end
+  // product part start
+  .flip-card-back .product-icon img {
+    width: 90px;
+  }
+
+  // product end
+
+  // testimonial part start
+  .sm-img img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
-@media(min-width:992px) and (max-width:1199px) {}
+// large device responsive
+@media(min-width:992px) and (max-width:1199px) {
+
+  // start of product responsive
+  .flip-card,
+  .flip-card-front img {
+    height: 248px;
+  }
+
+  .product-brif p {
+    line-height: 20px;
+  }
+
+  .product-name h1 {
+    font-size: 20px;
+  }
+
+  // end of product
+
+  // stats part start
+  .stat {
+    padding: 70px 0;
+  }
+
+  .stat-count .item-counter {
+    width: 200px;
+    height: 200px;
+    border: 8px solid $theme;
+  }
+
+  .item-contain {
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 30px;
+      padding: 10px 0 15px;
+    }
+  }
+
+  .position h2,
+  .time-counter span {
+    font-size: 35px;
+    padding: 10px 0 15px;
+  }
+
+  .item-contain h3,
+  .position h3,
+  .time-counter h3 {
+    font-size: 20px;
+  }
+
+  // stats part end
+
+  // ceo part start
+  .ceo-info {
+    padding: 60px;
+
+  }
+
+  // ceo part end
+
+  // counter part start
+  .counter-part {
+    padding: 70px 0;
+  }
+
+  .counter-text {
+    @include font(45px, 300);
+  }
+
+  // counter end
+
+  // latest work part start
+  .blog {
+
+    .blog-text {
+      padding: 25px;
+    }
+  }
+
+  .blog-small {
+    padding-top: 20px;
+
+    span {
+      margin-right: 15px;
+    }
+  }
+
+
+  .blog .card {
+    img {
+      height: 163px;
+    }
+  }
+
+  // work part end
+
+  // factrory part start
+  .factory {
+    padding: 70px 0;
+
+    .factory-item {
+      .image {
+        height: 191px;
+        margin-bottom: 24px;
+      }
+
+      &.big-item .image {
+        height: 349px;
+      }
+    }
+  }
+
+  // news part start
+
+  .news-item {
+    .image {
+      height: 234px;
+    }
+
+    .text {
+      padding: 28px;
+    }
+  }
+
+  // news part end
+
+  // social part start
+
+  .social-item {
+    .image {
+      height: 224px;
+    }
+  }
+
+  // social part end
+
+
+}
+
+// medium device responsive
+@media(min-width:768px) and (max-width:991px) {
+
+  // common part start
+  
+.section-header {
+	p {
+		@include font(13px, 500);
+		line-height: 45px;
+		letter-spacing: 10px;
+	}
+
+	h1 {
+		@include font(35px, 500);
+		line-height: 35px;
+	}
+}
+
+.sub-title {
+	@include font(16px, 500);
+	line-height: 18px;
+}
+
+.bg-overly {
+	background: rgba(64, 65, 70, .8);
+	padding: 60px 0;
+}
+// common part end
+
+// about part start
+  .about {
+    padding: 60px 0;
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 30px;
+  }
+
+  .about-text {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .fa-gear {
+    font-size: 24px;
+  }
+
+  .Who-we-are {
+    img {
+      height: 161px;
+    }
+
+    .about-overly {
+      top: 161px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  // about part end
+
+  // product part start
+  .filter_menu ul li {
+    padding: 3px 13px;
+    margin: 0 4px 20px;
+  }
+  .flip-card,
+  .flip-card-front img {
+    height: 179px;
+  }
+
+  .product-brif p {
+    line-height: 20px;
+  }
+
+  .product-name h1 {
+    font-size: 16px;
+  }
+
+  .flip-card-back {
+    padding: 6px 20px 0;
+
+    .product-brif{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+  .product-icon img {
+    width: 50px;
+  }
+}
+
+.read-more a {
+	line-height: 30px;
+}
+  // product part end
+
+  // process part start
+  .process {
+    .nav-pills {
+      .nav-link {
+        border-radius: 5px;
+        width: 120px;
+        height: 110px;
+
+        i {
+          font-size: 35px;
+          padding-bottom: 10px;
+        }
+
+        .plain-text {
+          line-height: 18px;
+          font-size: 15px !important;
+        }
+      }
+
+      .nav-item {
+        padding: 10px;
+      }
+    }
+  }
+  // process part end
+
+  // stats part start
+  .stat {
+    padding: 70px 0;
+  }
+
+  .stat-count .item-counter {
+    width: 180px;
+    height: 180px;
+    border: 8px solid $theme;
+  }
+
+  .item-contain {
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 30px;
+      padding: 10px 0 15px;
+    }
+  }
+
+  .position h2,
+  .time-counter span {
+    font-size: 35px;
+    padding: 10px 0 15px;
+  }
+
+  .item-contain h3,
+  .position h3,
+  .time-counter h3 {
+    font-size: 20px;
+  }
+.res-bdr-fix{
+  border-left: none !important;
+}
+  // stats part end
+  // team part start
+  .person img {
+    height: 204px;
+  }
+  .tm-fullName p:first-child, .tm-mail p:first-child, .tm-contactNo p:first-child {
+    padding-top: 12px;
+  }
+  // team part end
+
+    // ceo part start
+    .ceo{
+      background-color: #212529;
+    }
+    .ceo-info {
+      padding: 20px 30px 30px;
+  
+    }
+    .ceo-img{
+      background:unset;
+      padding: 0 !important;
+    }
+    .ceo-front-img {
+      img{
+        width: 100%;
+      }
+    }
+  
+    // ceo part end
+    // counter part start
+    .counter-part {
+      padding: 60px 0;
+    }
+    .counter-text {
+      font-size: 40px;
+    }
+    // counter part end
+    // client part start
+    .our-clients {
+      padding: 60px 0;
+    }
+
+    // latest work part start
+    .blog .blog-text {
+      padding: 20px;
+    }
+    // factory part start
+    .factory {
+      padding: 60px 0;
+    }
+    .factory .factory-item .image {
+      height: 140px;
+    }
+    .factory .factory-item.big-item .image {
+      height: 255px;
+    }
+
+    // news part start
+    .news-item .image {
+      height: 171px;
+    }
+    .news-item .text {
+      padding: 20px;
+    }
+    .news-item .image .date {
+      bottom: 10px;
+      left: 10px;
+    }
+    .news-item .image .date span {
+      font-size: 15px;
+      width: 55px;
+      height: 55px;
+      line-height: 15px;
+    }
+
+    // sicial part start
+    .social-item .image {
+      height: 164px;
+    }
+    .social-item .plain-text {
+      padding: 20px;
+    }
+    .social-item .plain-text .read-more {
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    // footer part start
+    footer .footer-bg {
+      padding: 20px 0 0px 0;
+    }
+    footer .footer-bg .links ul li {
+      margin-bottom: 6px;
+    }
+    footer .footer-bg .footer-title {
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+}

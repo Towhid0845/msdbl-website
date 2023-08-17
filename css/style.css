@@ -209,17 +209,6 @@ video-part {
   position: relative;
   overflow: hidden; }
 
-  /* .video-part .video-overly {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  bottom: 50;
-	  width: 80%;
-	  background: rgba(99, 96, 96, 0.4);
-	  padding: 15px;
-	  box-sizing: border-box;
-	  color: var(--theme);
-  } */
 .fa-play {
   position: absolute;
   z-index: 1;
@@ -388,19 +377,22 @@ video-part {
   .process .nav-pills .nav-link {
     background: rgba(255, 255, 255, 0.1);
     opacity: 0.8;
-    border-radius: 3px; }
+    border-radius: 3px;
+    width: 130px;
+    height: 120px; }
     .process .nav-pills .nav-link i {
       display: block;
       font-size: 40px;
       color: #e41b2e;
-      padding: 10px 25px; }
+      padding-bottom: 10px; }
     .process .nav-pills .nav-link .plain-text {
-      color: #ffffff; }
+      color: #ffffff;
+      line-height: 16px; }
   .process .nav-pills .nav-item {
-    padding: 5px;
+    padding: 10px;
     transition: 0.5; }
     .process .nav-pills .nav-item:hover i {
-      color: var(--white); }
+      color: #ffffff; }
   .process .nav-pills .nav-link.active {
     background-color: #e41b2e;
     opacity: 1; }
@@ -532,6 +524,8 @@ video-part {
 
 .ceo-info {
   padding: 80px; }
+  .ceo-info .ceo-msg p {
+    text-align: justify !important; }
 
 .counter-part {
   padding: 80px 0;

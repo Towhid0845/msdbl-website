@@ -1,6 +1,4 @@
 $(function ($) {
-
-
 	// pre loader
 	$(window).on("load", function () {
 		$(".preloader").delay(1000).fadeOut(1000);
@@ -101,6 +99,29 @@ $(function ($) {
 		dots: true,
 		autoplay: false,
 		dotsClass: "blog_dots",
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 
 
@@ -115,6 +136,29 @@ $(function ($) {
 		speed: 3000,
 		dotsClass: "blog_dots",
 		cssEase: "linear",
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 
 	  
@@ -179,6 +223,29 @@ $(function ($) {
 		slidesToScroll: 1,
 		prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
 		nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 
 
