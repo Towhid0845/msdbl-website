@@ -1,6 +1,10 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
+.testimonial{
+  padding: 80px 0;
+}
+
 .testimonial-slide .card {
     border-radius: 10px;
     cursor: pointer;

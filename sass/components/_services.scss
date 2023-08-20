@@ -9,13 +9,19 @@
 	background-attachment: fixed;
 	position: relative;
 
-  i {
-   font-size: 50px;
-   color: $theme;
-  }
-  .service-text .read-more a {
+  .service-text {
+	.text-wrap {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+  .read-more a {
     font-size: 16px;
   }
+}
 }
 
 .fa-pen-to-square {
