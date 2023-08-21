@@ -441,6 +441,22 @@
     width: 100px;
     height: 100px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .hero-pre-title {
+    line-height: 22px; }
+
+  .hero-title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px; }
+
+  .hero-pad {
+    padding-top: 150px; }
+    .hero-pad .plain-text {
+      line-height: 22px; }
+
+  .particles-js-canvas-el {
+    height: 100vh !important; }
+
   .flip-card,
   .flip-card-front img {
     height: 248px; }
@@ -542,6 +558,29 @@
   .bg-overly {
     background: rgba(64, 65, 70, 0.8);
     padding: 60px 0; }
+
+  .hero-pre-title {
+    line-height: 20px; }
+
+  .hero-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px; }
+
+  .hero-pad {
+    padding-top: 180px; }
+    .hero-pad .plain-text {
+      padding-top: 15px !important;
+      line-height: 22px; }
+
+  .particles-js-canvas-el {
+    height: 100vh !important; }
+
+  .circle {
+    height: 80px;
+    width: 80px; }
+    .circle .fa-play {
+      font-size: 40px; }
 
   .about {
     padding: 60px 0; }
@@ -733,6 +772,32 @@
   .bg-overly {
     background: rgba(64, 65, 70, 0.8);
     padding: 40px 0; }
+
+  .my-btn {
+    padding: 12px 18px; }
+
+  .hero-pre-title {
+    line-height: 20px; }
+
+  .hero-title {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px; }
+
+  .hero-pad {
+    padding-top: 180px; }
+    .hero-pad .plain-text {
+      padding-top: 15px !important;
+      line-height: 22px; }
+
+  .particles-js-canvas-el {
+    height: 100vh !important; }
+
+  .circle {
+    height: 70px;
+    width: 70px; }
+    .circle .fa-play {
+      font-size: 30px; }
 
   .about {
     padding: 40px 0; }
@@ -933,14 +998,41 @@
 
   .bg-overly {
     background: rgba(64, 65, 70, 0.8);
-    padding: 20px 0; }
+    padding: 25px 0; }
 
   .my-btn {
     padding: 10px 20px;
     margin-top: 25px; }
 
+  .hero-pre-title {
+    line-height: 18px;
+    font-size: 11px;
+    letter-spacing: 12px; }
+
+  .hero-title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px; }
+
+  .hero-pad {
+    padding-top: 160px; }
+    .hero-pad .plain-text {
+      padding-top: 15px !important;
+      line-height: 22px; }
+
+  .particles-js-canvas-el {
+    height: 100vh !important; }
+
+  .circle {
+    height: 70px;
+    width: 70px;
+    top: -65%;
+    left: 65%; }
+    .circle .fa-play {
+      font-size: 30px; }
+
   .about {
-    padding: 20px 0; }
+    padding: 25px 0; }
 
   .fa-gear {
     font-size: 30px; }
@@ -973,7 +1065,7 @@
     -webkit-box-orient: vertical; }
 
   .product {
-    padding: 20px 0; }
+    padding: 25px 0; }
 
   .filter_menu ul li {
     padding: 3px 9px;
@@ -1018,10 +1110,10 @@
     text-align: justify; }
 
   .testimonial {
-    padding: 20px 0 60px; }
+    padding: 25px 0 60px; }
 
   .stat {
-    padding: 20px 0; }
+    padding: 25px 0; }
 
   .stat-count .item-counter {
     width: 180px;
@@ -1051,7 +1143,7 @@
     text-align: center; }
 
   .team .bg-overly {
-    padding-bottom: 20px; }
+    padding-bottom: 25px; }
 
   .person img {
     height: 439px; }
@@ -1073,13 +1165,13 @@
     width: 100%; }
 
   .counter-part {
-    padding: 20px 0; }
+    padding: 25px 0; }
 
   .counter-text {
     font-size: 30px; }
 
   .our-clients {
-    padding: 20px 0; }
+    padding: 25px 0; }
 
   .blog .bg-overly {
     padding-bottom: 70px; }
@@ -1107,7 +1199,7 @@
     padding: 40px 0; }
 
   .social-responsibilites .bg-overly {
-    padding-bottom: 20px; }
+    padding-bottom: 25px; }
 
   .social-item .image {
     height: 391px; }
@@ -1120,7 +1212,7 @@
     padding-top: 10px; }
 
   footer .footer-bg {
-    padding: 0; }
+    padding: 25px 0 0; }
 
   footer .footer-bg .links ul li {
     margin-bottom: 6px; }

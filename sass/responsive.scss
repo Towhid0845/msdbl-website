@@ -793,6 +793,28 @@
 // large device responsive
 @media(min-width:992px) and (max-width:1199px) {
 
+  // banner part start
+  .hero-pre-title {
+    line-height: 22px;
+  }
+  
+  .hero-title {
+      @include font(50px, 500);
+    line-height: 60px;
+  }
+  
+  .hero-pad {
+    padding-top: 150px;
+
+    .plain-text{
+      line-height: 22px;
+    }
+  }
+  .particles-js-canvas-el{
+    height: 100vh !important;
+  }
+  // end of banner part
+
   // start of product responsive
   .flip-card,
   .flip-card-front img {
@@ -980,6 +1002,39 @@
 	padding: 60px 0;
 }
 // common part end
+
+  // banner part start
+  .hero-pre-title {
+    line-height: 20px;
+  }
+  
+  .hero-title {
+      @include font(40px, 500);
+    line-height: 50px;
+  }
+  
+  .hero-pad {
+    padding-top: 180px;
+
+    .plain-text{
+      padding-top: 15px !important;
+      line-height: 22px;
+    }
+  }
+  .particles-js-canvas-el{
+    height: 100vh !important;
+  }
+  .circle {
+    height: 80px;
+    width: 80px;
+
+    .fa-play {
+    font-size: 40px;
+    }
+  }
+  
+  // end of banner part
+
 
 // about part start
   .about {
@@ -1257,7 +1312,45 @@
 	background: rgba(64, 65, 70, .8);
 	padding: 40px 0;
 }
+
+.my-btn {
+	padding: 12px 18px;
+}
 // common part end
+
+
+  // banner part start
+  .hero-pre-title {
+    line-height: 20px;
+  }
+  
+  .hero-title {
+      @include font(35px, 500);
+    line-height: 45px;
+  }
+  
+  .hero-pad {
+    padding-top: 180px;
+
+    .plain-text{
+      padding-top: 15px !important;
+      line-height: 22px;
+    }
+  }
+  .particles-js-canvas-el{
+    height: 100vh !important;
+  }
+
+  .circle {
+    height: 70px;
+    width: 70px;
+
+    .fa-play {
+    font-size: 30px;
+    }
+  }
+  // end of banner part
+
 
 // about part start
   .about {
@@ -1564,7 +1657,7 @@
 
 .bg-overly {
 	background: rgba(64, 65, 70, .8);
-	padding: 20px 0;
+	padding: 25px 0;
 }
 
 .my-btn {
@@ -1573,9 +1666,45 @@
 }
 // common part end
 
+// banner part start
+.hero-pre-title {
+  line-height: 18px;
+  font-size: 11px;
+  letter-spacing: 12px;
+}
+
+.hero-title {
+    @include font(30px, 500);
+  line-height: 40px;
+}
+
+.hero-pad {
+  padding-top: 160px;
+
+  .plain-text{
+    padding-top: 15px !important;
+    line-height: 22px;
+  }
+}
+.particles-js-canvas-el{
+  height: 100vh !important;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  top: -65%;
+  left: 65%;
+  
+  .fa-play {
+  font-size: 30px;
+  }
+}
+// banner part end
+
 // about part start
   .about {
-    padding: 20px 0;
+    padding: 25px 0;
   }
 
   .fa-gear {
@@ -1633,7 +1762,7 @@
 
   // product part start
   .product {
-    padding: 20px 0;
+    padding: 25px 0;
   }
   .filter_menu ul li {
     padding: 3px 9px;
@@ -1705,12 +1834,12 @@
   // process part end
 // testimonial part start
 .testimonial{
-  padding: 20px 0 60px;
+  padding: 25px 0 60px;
 }
 
   // stats part start
   .stat {
-    padding: 20px 0;
+    padding: 25px 0;
   }
 
   .stat-count .item-counter {
@@ -1752,7 +1881,7 @@
   // team part start
 .team{
   .bg-overly{
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 
@@ -1787,7 +1916,7 @@
     // ceo part end
     // counter part start
     .counter-part {
-      padding: 20px 0;
+      padding: 25px 0;
     }
     .counter-text {
       font-size: 30px;
@@ -1795,7 +1924,7 @@
     // counter part end
     // client part start
     .our-clients {
-      padding: 20px 0;
+      padding: 25px 0;
     }
 
     // latest work part start
@@ -1840,7 +1969,7 @@
     // sicial part start
     .social-responsibilites{
     .bg-overly{
-      padding-bottom: 20px;
+      padding-bottom: 25px;
     }}
     .social-item .image {
       height: 391px;
@@ -1855,7 +1984,7 @@
 
     // footer part start
     footer .footer-bg {
-      padding: 0;
+      padding: 25px 0 0;
     }
     footer .footer-bg .links ul li {
       margin-bottom: 6px;

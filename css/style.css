@@ -101,26 +101,31 @@ body {
   background: rgba(64, 65, 70, 0.8);
   padding: 80px 0; }
 
+.hero > .container {
+  position: relative; }
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px !important; }
+
 .navbar-brand {
   color: #ffffff;
   font-family: "Source Sans 3", sans-serif;
   font-size: 20px; }
-  .navbar-brand:hover {
-    color: #ffffff; }
-
-.menu {
-  padding-top: 35px;
-  background-color: transparent; }
 
 .fixed {
   transition: 0.8s;
   position: fixed;
-  top: 0;
+  top: -30px;
   left: 0;
   background: #414246;
   padding-top: 0;
   width: 100%;
   z-index: 999; }
+
+.navbar-collapse.collapse.show {
+  background: transparent; }
 
 .menu-text li a,
 .dropdown-content li a {
@@ -168,6 +173,13 @@ li ul.dropdown-content {
 
 li.dropdown:hover .dropdown-content {
   display: block; }
+
+.show {
+  position: absolute;
+  background-color: #414246 !important;
+  width: 300px;
+  top: 60px;
+  right: 0; }
 
 .circle {
   height: 100px;
@@ -221,14 +233,6 @@ video-part {
 .hero {
   height: 100%;
   position: relative; }
-  .hero .menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 50;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box; }
 
 .hero-pre-title {
   font-family: "Dosis", sans-serif;
@@ -250,7 +254,7 @@ video-part {
     text-transform: lowercase; }
 
 .hero-pad {
-  padding-top: 50px; }
+  padding-top: 140px; }
 
 .about {
   padding: 80px 0; }
