@@ -278,6 +278,35 @@ $(function ($) {
 
 	
 
+	// mobile menu js
+	$('.mobile-topbar .bars i').click(function () {
+		$('.mobile-menu-main').addClass('show-mobile-menu')
+	  })
+	  $('.close-m-menu').click(function () {
+		$('.mobile-menu-main').removeClass('show-mobile-menu')
+	  })
+	  $('.mobile-topbar .bars i').click(function () {
+		$('.mobile-menu-overlay').addClass('show-mobile-menu-overlay')
+	  })
+	  $('.mobile-topbar .bars i').click(function () {
+		$('.mobile-menu-overlay').addClass('show-mobile-menu-overlay')
+	  })
+	  $('.close-m-menu').click(function () {
+		$('.mobile-menu-overlay').removeClass('show-mobile-menu-overlay')
+	  })
+	  $('.mobile-menu-overlay').click(function () {
+		$('.mobile-menu-overlay').removeClass('show-mobile-menu-overlay')
+	  })
+	  $('.mobile-menu-overlay').click(function () {
+		$('.mobile-menu-main').removeClass('show-mobile-menu')
+	  })
+	
+	  $('.sub-menu ul').hide();
+	  $(".sub-menu a").click(function () {
+		$(this).parent(".sub-menu").children("ul").slideToggle("100");
+		$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+	  });
+
 });
 
 AOS.init({
@@ -285,27 +314,27 @@ AOS.init({
 });
 
 
-function process1Fun() {
-	document.getElementById("process1").style.display = "block";
-	document.getElementById("process2").style.display = "none";
-	document.getElementById("process3").style.display = "none";
-	document.getElementById("process4").style.display = "none";
-}
-function process2Fun() {
-	document.getElementById("process1").style.display = "none";
-	document.getElementById("process2").style.display = "block";
-	document.getElementById("process3").style.display = "none";
-	document.getElementById("process4").style.display = "none";
-}
-function process3Fun() {
-	document.getElementById("process1").style.display = "none";
-	document.getElementById("process2").style.display = "none";
-	document.getElementById("process3").style.display = "block";
-	document.getElementById("process4").style.display = "none";
-}
-function process4Fun() {
-	document.getElementById("process1").style.display = "none";
-	document.getElementById("process2").style.display = "none";
-	document.getElementById("process3").style.display = "none";
-	document.getElementById("process4").style.display = "block";
-}
+// function process1Fun() {
+// 	document.getElementById("process1").style.display = "block";
+// 	document.getElementById("process2").style.display = "none";
+// 	document.getElementById("process3").style.display = "none";
+// 	document.getElementById("process4").style.display = "none";
+// }
+// function process2Fun() {
+// 	document.getElementById("process1").style.display = "none";
+// 	document.getElementById("process2").style.display = "block";
+// 	document.getElementById("process3").style.display = "none";
+// 	document.getElementById("process4").style.display = "none";
+// }
+// function process3Fun() {
+// 	document.getElementById("process1").style.display = "none";
+// 	document.getElementById("process2").style.display = "none";
+// 	document.getElementById("process3").style.display = "block";
+// 	document.getElementById("process4").style.display = "none";
+// }
+// function process4Fun() {
+// 	document.getElementById("process1").style.display = "none";
+// 	document.getElementById("process2").style.display = "none";
+// 	document.getElementById("process3").style.display = "none";
+// 	document.getElementById("process4").style.display = "block";
+// }
