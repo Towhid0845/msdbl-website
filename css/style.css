@@ -176,7 +176,7 @@ nav {
       nav ul li:hover .hover-menu {
         top: 0; }
   nav .navbar-nav {
-    background-color: #e41b2e;
+    background-color: transparent;
     width: 100%; }
   nav .get-contact {
     background: #414246;
