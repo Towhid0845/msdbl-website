@@ -52,6 +52,9 @@
   }
 
   // end of common
+  .hero-pad {
+    padding-top: 300px;
+  }
 
   // about part start 
   .about {
@@ -408,6 +411,10 @@
 
   // end of common
 
+  .hero-pad {
+    padding-top: 250px;
+  }
+
   // start of about responsive 
   .about {
     padding: 85px 0;
@@ -725,6 +732,12 @@
 // extra large device responsive
 @media(min-width:1200px) and (max-width:1399px) {
 
+  .hero-pad {
+    padding-top: 200px;
+  }
+  .particles-js-canvas-el {
+    height: 700px !important;
+  }
   // about start
   .Who-we-are {
     img {
@@ -741,7 +754,12 @@
     }
   }
 
+
   //about end
+  .service img {
+    width: 60px;
+    height: 60px;
+  }
 
   // team start
   .person {
@@ -804,14 +822,17 @@
   }
   
   .hero-pad {
-    padding-top: 150px;
+    padding-top: 130px;
 
     .plain-text{
       line-height: 22px;
     }
   }
   .particles-js-canvas-el{
-    height: 100vh !important;
+    height: 557px !important;
+  }
+  .mobile-topbar {
+    padding: 6px 0;
   }
   // end of banner part
 
@@ -1005,7 +1026,8 @@
 
   // banner part start
   .hero-pre-title {
-    line-height: 20px;
+    line-height: 22px;
+    letter-spacing: 18px
   }
   
   .hero-title {
@@ -1014,7 +1036,7 @@
   }
   
   .hero-pad {
-    padding-top: 180px;
+    padding-top: 80px;
 
     .plain-text{
       padding-top: 15px !important;
@@ -1022,7 +1044,7 @@
     }
   }
   .particles-js-canvas-el{
-    height: 100vh !important;
+    height: 432px !important;
   }
   .circle {
     height: 80px;
@@ -1032,7 +1054,13 @@
     font-size: 40px;
     }
   }
-  
+  .logo img{
+    width: 70px;
+    height: 50px;
+  }
+  .mobile-topbar {
+    padding: 6px 0;
+  }
   // end of banner part
 
 
@@ -1055,9 +1083,14 @@
     font-size: 24px;
   }
 
+  .what-we-do img{
+    height: 518px !important;
+    margin-top: 20px;
+  }
+
   .Who-we-are {
     img {
-      height: 161px;
+      height: 250px;
     }
 
     .about-overly {
@@ -1069,6 +1102,12 @@
         height: 30px;
       }
     }
+  }
+  .Who-we-are .about-overly {
+    top: 165px;
+  }
+  .what-we-do .about-overly {
+    top: 400px;
   }
   // about part end
 
@@ -1314,23 +1353,26 @@
 }
 
 .my-btn {
-	padding: 12px 18px;
+	padding: 11px 16px;
+  font-size: 11px;
+  margin-top: 10px;
 }
 // common part end
 
 
   // banner part start
   .hero-pre-title {
-    line-height: 20px;
+    line-height: 15px;
+    letter-spacing: 12px
   }
   
   .hero-title {
-      @include font(35px, 500);
+      @include font(30px, 500);
     line-height: 45px;
   }
   
   .hero-pad {
-    padding-top: 180px;
+    padding-top: 60px;
 
     .plain-text{
       padding-top: 15px !important;
@@ -1338,7 +1380,7 @@
     }
   }
   .particles-js-canvas-el{
-    height: 100vh !important;
+    height: 370px !important;
   }
 
   .circle {
@@ -1348,6 +1390,13 @@
     .fa-play {
     font-size: 30px;
     }
+  }
+
+  .logo img{
+  
+      width: 60px;
+      height: 45px;
+   
   }
   // end of banner part
 
@@ -1632,6 +1681,7 @@
     }
 }
 
+
 // extra small device responsive
 @media(max-width:575px) {
 
@@ -1661,8 +1711,9 @@
 }
 
 .my-btn {
-	padding: 10px 20px;
+	padding: 10px 18px;
 	margin-top: 25px;
+  font-size: 11px;
 }
 // common part end
 
@@ -1679,7 +1730,7 @@
 }
 
 .hero-pad {
-  padding-top: 160px;
+  padding-top: 50px;
 
   .plain-text{
     padding-top: 15px !important;
@@ -1687,24 +1738,30 @@
   }
 }
 .particles-js-canvas-el{
-  height: 100vh !important;
+  height: 270px !important;
 }
 
 .circle {
   height: 70px;
   width: 70px;
-  top: -65%;
-  left: 65%;
+  top: -110%;
+  left: 70%;
   
   .fa-play {
   font-size: 30px;
   }
 }
+.logo img{
+
+    width: 60px;
+    height: 45px;
+ 
+}
 // banner part end
 
 // about part start
   .about {
-    padding: 25px 0;
+    padding: 40px 0;
   }
 
   .fa-gear {
@@ -1965,6 +2022,13 @@
     .certificate {
       padding: 40px 0;
     }
+    .certificate .icon {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 15px
+    }
+
 
     // sicial part start
     .social-responsibilites{
@@ -1993,4 +2057,10 @@
       padding-top: 45px;
       padding-bottom: 40px;
     }
+}
+
+@media(max-width:480px){
+  .particles-js-canvas-el{
+    height: 203px !important;
+  }
 }

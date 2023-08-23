@@ -39,6 +39,9 @@
     background: rgba(64, 65, 70, 0.8);
     padding: 90px 0; }
 
+  .hero-pad {
+    padding-top: 300px; }
+
   .about {
     padding: 90px 0; }
     .about .about-text {
@@ -242,6 +245,9 @@
     background: rgba(64, 65, 70, 0.8);
     padding: 80px 0; }
 
+  .hero-pad {
+    padding-top: 250px; }
+
   .about {
     padding: 85px 0; }
     .about .about-text {
@@ -408,6 +414,12 @@
       footer .footer-bg .footer-btm p {
         font-size: 18px; } }
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .hero-pad {
+    padding-top: 200px; }
+
+  .particles-js-canvas-el {
+    height: 700px !important; }
+
   .Who-we-are img {
     height: 265px; }
   .Who-we-are .about-overly {
@@ -415,6 +427,10 @@
     .Who-we-are .about-overly img {
       width: 40px;
       height: 40px; }
+
+  .service img {
+    width: 60px;
+    height: 60px; }
 
   .person img {
     height: 340px; }
@@ -450,12 +466,15 @@
     line-height: 60px; }
 
   .hero-pad {
-    padding-top: 150px; }
+    padding-top: 130px; }
     .hero-pad .plain-text {
       line-height: 22px; }
 
   .particles-js-canvas-el {
-    height: 100vh !important; }
+    height: 557px !important; }
+
+  .mobile-topbar {
+    padding: 6px 0; }
 
   .flip-card,
   .flip-card-front img {
@@ -560,7 +579,8 @@
     padding: 60px 0; }
 
   .hero-pre-title {
-    line-height: 20px; }
+    line-height: 22px;
+    letter-spacing: 18px; }
 
   .hero-title {
     font-size: 40px;
@@ -568,19 +588,26 @@
     line-height: 50px; }
 
   .hero-pad {
-    padding-top: 180px; }
+    padding-top: 80px; }
     .hero-pad .plain-text {
       padding-top: 15px !important;
       line-height: 22px; }
 
   .particles-js-canvas-el {
-    height: 100vh !important; }
+    height: 432px !important; }
 
   .circle {
     height: 80px;
     width: 80px; }
     .circle .fa-play {
       font-size: 40px; }
+
+  .logo img {
+    width: 70px;
+    height: 50px; }
+
+  .mobile-topbar {
+    padding: 6px 0; }
 
   .about {
     padding: 60px 0; }
@@ -596,14 +623,24 @@
   .fa-gear {
     font-size: 24px; }
 
+  .what-we-do img {
+    height: 518px !important;
+    margin-top: 20px; }
+
   .Who-we-are img {
-    height: 161px; }
+    height: 250px; }
   .Who-we-are .about-overly {
     top: 100px;
     padding: 10px; }
     .Who-we-are .about-overly img {
       width: 30px;
       height: 30px; }
+
+  .Who-we-are .about-overly {
+    top: 165px; }
+
+  .what-we-do .about-overly {
+    top: 400px; }
 
   .service img {
     width: 50px;
@@ -774,30 +811,37 @@
     padding: 40px 0; }
 
   .my-btn {
-    padding: 12px 18px; }
+    padding: 11px 16px;
+    font-size: 11px;
+    margin-top: 10px; }
 
   .hero-pre-title {
-    line-height: 20px; }
+    line-height: 15px;
+    letter-spacing: 12px; }
 
   .hero-title {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 45px; }
 
   .hero-pad {
-    padding-top: 180px; }
+    padding-top: 60px; }
     .hero-pad .plain-text {
       padding-top: 15px !important;
       line-height: 22px; }
 
   .particles-js-canvas-el {
-    height: 100vh !important; }
+    height: 370px !important; }
 
   .circle {
     height: 70px;
     width: 70px; }
     .circle .fa-play {
       font-size: 30px; }
+
+  .logo img {
+    width: 60px;
+    height: 45px; }
 
   .about {
     padding: 40px 0; }
@@ -1001,8 +1045,9 @@
     padding: 25px 0; }
 
   .my-btn {
-    padding: 10px 20px;
-    margin-top: 25px; }
+    padding: 10px 18px;
+    margin-top: 25px;
+    font-size: 11px; }
 
   .hero-pre-title {
     line-height: 18px;
@@ -1015,24 +1060,28 @@
     line-height: 40px; }
 
   .hero-pad {
-    padding-top: 160px; }
+    padding-top: 50px; }
     .hero-pad .plain-text {
       padding-top: 15px !important;
       line-height: 22px; }
 
   .particles-js-canvas-el {
-    height: 100vh !important; }
+    height: 270px !important; }
 
   .circle {
     height: 70px;
     width: 70px;
-    top: -65%;
-    left: 65%; }
+    top: -110%;
+    left: 70%; }
     .circle .fa-play {
       font-size: 30px; }
 
+  .logo img {
+    width: 60px;
+    height: 45px; }
+
   .about {
-    padding: 25px 0; }
+    padding: 40px 0; }
 
   .fa-gear {
     font-size: 30px; }
@@ -1198,6 +1247,12 @@
   .certificate {
     padding: 40px 0; }
 
+  .certificate .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px; }
+
   .social-responsibilites .bg-overly {
     padding-bottom: 25px; }
 
@@ -1220,5 +1275,8 @@
   footer .footer-bg .footer-title {
     padding-top: 45px;
     padding-bottom: 40px; } }
+@media (max-width: 480px) {
+  .particles-js-canvas-el {
+    height: 203px !important; } }
 
 /*# sourceMappingURL=responsive.css.map */
