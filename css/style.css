@@ -113,68 +113,67 @@ nav {
   z-index: 999; }
   nav .container {
     position: relative; }
-  nav ul {
-    padding-left: 30px !important; }
-    nav ul li {
+  nav ul li {
+    position: relative;
+    padding: 30px 0 !important;
+    cursor: pointer; }
+    nav ul li a {
+      font-size: 14px;
+      color: #ffffff !important;
+      padding: 0 6px !important;
+      text-transform: uppercase;
+      font-weight: 500 !important;
       position: relative;
-      padding: 30px 0 !important;
-      cursor: pointer; }
-      nav ul li a {
-        color: #ffffff !important;
-        padding: 0 24px !important;
-        text-transform: uppercase;
-        font-weight: 500 !important;
-        position: relative;
-        z-index: 99;
-        overflow: hidden; }
-        nav ul li a .default-menu {
-          transition: all linear .2s; }
-        nav ul li a .hover-menu {
-          transition: all linear .2s;
-          position: absolute;
-          top: 24px;
-          left: 50%;
-          text-align: center;
-          transform: translateX(-50%); }
-        nav ul li a i {
-          position: relative;
-          top: -3px; }
-      nav ul li ul {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 320px;
-        background-color: #414246;
-        padding-left: 0 !important;
-        opacity: 0;
-        visibility: hidden;
+      z-index: 99;
+      overflow: hidden; }
+      nav ul li a .default-menu {
         transition: all linear .2s; }
-        nav ul li ul li {
-          padding: 0 !important; }
-          nav ul li ul li a {
-            text-transform: unset;
-            padding: 16px 24px !important;
-            display: block;
-            line-height: 18px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all linear .2s;
-            color: #ffffff !important; }
-            nav ul li ul li a::before {
-              display: none; }
-            nav ul li ul li a:hover {
-              background-color: #ffffff;
-              color: #414246 !important; }
-      nav ul li:hover > ul {
-        opacity: 1;
-        visibility: visible; }
-      nav ul li:hover ul li a {
-        color: #ffffff !important; }
-        nav ul li:hover ul li a:hover {
-          color: #e41b2e !important; }
-      nav ul li:hover .default-menu {
-        transform: translateY(-24px); }
-      nav ul li:hover .hover-menu {
-        top: 0; }
+      nav ul li a .hover-menu {
+        transition: all linear .2s;
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%); }
+      nav ul li a i {
+        position: relative;
+        top: -3px; }
+    nav ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 320px;
+      background-color: #414246;
+      padding-left: 0 !important;
+      opacity: 0;
+      visibility: hidden;
+      transition: all linear .2s; }
+      nav ul li ul li {
+        padding: 0 !important; }
+        nav ul li ul li a {
+          text-transform: unset;
+          padding: 16px 24px !important;
+          display: block;
+          line-height: 18px;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          transition: all linear .2s;
+          color: #ffffff !important; }
+          nav ul li ul li a::before {
+            display: none; }
+          nav ul li ul li a:hover {
+            background-color: #ffffff;
+            color: #414246 !important; }
+    nav ul li:hover > ul {
+      opacity: 1;
+      visibility: visible; }
+    nav ul li:hover ul li a {
+      color: #ffffff !important; }
+      nav ul li:hover ul li a:hover {
+        color: #e41b2e !important; }
+    nav ul li:hover .default-menu {
+      transform: translateY(-24px); }
+    nav ul li:hover .hover-menu {
+      top: 0; }
   nav .navbar-nav {
     background-color: transparent;
     width: 100%; }

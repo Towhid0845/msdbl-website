@@ -118,7 +118,7 @@ nav {
   }
 
   ul {
-    padding-left: 30px !important;
+    // padding-left: 30px !important;
 
     li {
       position: relative;
@@ -126,8 +126,9 @@ nav {
       cursor: pointer;
 
       a {
+        font-size: 14px;
         color: $white !important;
-        padding: 0 24px !important;
+        padding: 0 6px !important;
         text-transform: uppercase;
         font-weight: 500 !important;
         position: relative;
@@ -196,14 +197,14 @@ nav {
       }
 
       &:hover {
-        a {
+        // a {
           // color: $theme !important;
 
           // &::before {
           //   bottom: 18px;
           //   opacity: 1;
           // }
-        }
+        // }
 
         ul {
           li {
