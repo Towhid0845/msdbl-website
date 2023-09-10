@@ -3,6 +3,14 @@
 
 .testimonial{
   padding: 80px 0;
+.text-wrap {
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+}
+
+.card-body {
+  min-height: 250px;
+}
 }
 
 .testimonial-slide .card {

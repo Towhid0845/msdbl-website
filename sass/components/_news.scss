@@ -54,7 +54,9 @@
       transition: all linear .2s;
     }
 
-    p {
+    .text-wrap {
+      -webkit-line-clamp: 2 !important;
+      line-clamp: 2 !important;
       padding: 10px 0;
     }
   }

@@ -44,20 +44,19 @@ $(function ($) {
 		}
 
 		//back to top button js
-		// if (scrTop > 200) {
-		//     $(".backTop").fadeIn(1000);
-		// } else {
-		//     $(".backTop").fadeOut(1000);
-		// }
+		if (scrTop > 200) {
+			$(".backTop").fadeIn(1000);
+		} else {
+			$(".backTop").fadeOut(1000);
+		}
 	});
-	// $(".backTop").on("click", function () {
-	// 	$("html,body").animate(
-	// 		{
-	// 			scrollTop: 0,
-	// 		},
-	// 		500
-	// 	);
-	// });
+	$(".backTop").on("click", function () {
+		$("html,body").animate({
+				scrollTop: 0,
+			},
+			500
+		);
+	});
 
 
 	// venobox js
@@ -131,6 +130,48 @@ $(function ($) {
 		],
 	});
 
+
+// team slider js
+$(".team-slide").slick({
+	dots: true,
+	arrows: false,
+	infinite: true,
+	speed: 800,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	autoplay: true,
+	dotsClass: "blog_dots",
+	autoplaySpeed: 2000,
+	responsive: [{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+			},
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			},
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+			},
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
+});
 
 	//blog slider
 	$(".blog-slide").slick({
