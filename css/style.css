@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&family=Rubik:wght@400;500;700&family=Source+Sans+3:wght@400;500;700&display=swap");
 * {
   margin: 0;
@@ -1153,5 +1154,54 @@ footer .footer-bg {
     transform: scale(0); }
   50% {
     transform: scale(1); } }
+.contact-us .background-image {
+  background: url(../images/b-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 676px; }
+  .contact-us .background-image .card {
+    background: transparent; }
+    .contact-us .background-image .card .card-title {
+      color: white;
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px; }
+    .contact-us .background-image .card .card-text {
+      color: white;
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 16px;
+      font-weight: 400; }
+      .contact-us .background-image .card .card-text span {
+        line-height: ☻ 22px;
+        display: block; }
+        .contact-us .background-image .card .card-text span i {
+          padding-right: 20px;
+          color: #e41b2e; }
+.contact-us .contact-head {
+  padding-top: 90px; }
+.contact-us .contact_form input {
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: solid 2px #bbbbbb;
+  color: #bdc2c7;
+  background: none;
+  border-radius: 0;
+  height: auto;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+.contact-us .contact_form textarea {
+  height: 195px; }
+
+.product.contact {
+  padding-top: 200px; }
+  .product.contact i {
+    font-size: 10px;
+    padding: 0 5px; }
 
 /*# sourceMappingURL=style.css.map */
