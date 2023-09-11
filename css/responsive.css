@@ -455,7 +455,12 @@
 
   .sm-img img {
     width: 100px;
-    height: 100px; } }
+    height: 100px; }
+
+  .news-lists .news-item .news-image {
+    position: relative;
+    width: 354px;
+    height: 244px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-pre-title {
     line-height: 22px; }
@@ -584,7 +589,19 @@
     text-align: center;
     padding-top: 50px; }
     .contact-us .contact-head h4 {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .news-lists .news-item .news-image {
+    position: relative;
+    width: 294px;
+    height: 203px; }
+
+  .news-lists .news-item .news-text .info {
+    padding: 24px;
+    height: 200px; }
+
+  .news-lists .news-item .news-text .info p {
+    margin-top: 15px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .section-header p {
     font-size: 13px;
@@ -846,7 +863,19 @@
     text-align: center;
     padding-top: 50px; }
     .contact-us .contact-head h4 {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .news-lists .news-item .news-image {
+    position: relative;
+    width: 334px;
+    height: 230px; }
+
+  .news-lists .news-item .news-text .info {
+    padding: 24px;
+    height: 200px; }
+
+  .news-lists .news-item .news-text .info p {
+    margin-top: 15px; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .section-header p {
     font-size: 13px;
@@ -1122,7 +1151,19 @@
     text-align: center;
     padding-top: 50px; }
     .contact-us .contact-head h4 {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .news-lists .news-item .news-image {
+    position: relative;
+    width: 244px;
+    height: 168px; }
+
+  .news-lists .news-item .news-text .info {
+    padding: 20px;
+    height: 171px; }
+
+  .news-lists .news-item .news-text .info p {
+    margin-top: 10px; } }
 @media (max-width: 575px) {
   .section-header p {
     font-size: 13px;
@@ -1410,7 +1451,19 @@
     text-align: center;
     padding-top: 50px; }
     .contact-us .contact-head h4 {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .news-lists .news-item .news-image {
+    position: relative;
+    width: 334px;
+    height: 230px; }
+
+  .news-lists .news-item .news-text .info {
+    padding: 20px;
+    height: 171px; }
+
+  .news-lists .news-item .news-text .info p {
+    margin-top: 10px; } }
 @media (max-width: 480px) {
   .particles-js-canvas-el {
     height: 203px !important; } }
