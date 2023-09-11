@@ -557,7 +557,34 @@
     padding: 28px; }
 
   .social-item .image {
-    height: 224px; } }
+    height: 224px; }
+
+  .breadcrumb .bg-overly {
+    padding-top: 100px !important; }
+
+  .content-page {
+    padding-top: 30px;
+    margin-bottom: 60px; }
+
+  table {
+    margin-left: 0; }
+
+  table tr th {
+    min-width: 120px;
+    text-align: end; }
+
+  .getintouch {
+    padding: 0 40px; }
+    .getintouch h4 {
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: 20px; }
+
+  .contact-us .contact-head {
+    text-align: center;
+    padding-top: 50px; }
+    .contact-us .contact-head h4 {
+      font-size: 20px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .section-header p {
     font-size: 13px;
@@ -789,7 +816,37 @@
 
   footer .footer-bg .footer-title {
     padding-top: 45px;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  .breadcrumb .bg-overly {
+    padding-top: 80px !important; }
+
+  .content-page {
+    padding-top: 30px;
+    margin-bottom: 60px; }
+
+  table {
+    margin-left: 0; }
+
+  table tr th {
+    min-width: 100px;
+    text-align: end; }
+
+  .contact-us {
+    margin: 80px 0; }
+
+  .getintouch {
+    padding: 0 40px; }
+    .getintouch h4 {
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: 20px; }
+
+  .contact-us .contact-head {
+    text-align: center;
+    padding-top: 50px; }
+    .contact-us .contact-head h4 {
+      font-size: 20px; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .section-header p {
     font-size: 13px;
@@ -1015,6 +1072,9 @@
     margin-top: 10px;
     padding-top: 10px; }
 
+  .footer-about {
+    padding-top: 40px; }
+
   footer .footer-bg {
     padding: 0; }
 
@@ -1023,7 +1083,46 @@
 
   footer .footer-bg .footer-title {
     padding-top: 45px;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  .content-page .content-main {
+    padding: 20px; }
+
+  .breadcrumb .bg-overly {
+    padding-top: 50px !important; }
+
+  .content-page {
+    padding-top: 0;
+    margin-bottom: 60px; }
+
+  blockquote {
+    padding: 30px; }
+
+  table {
+    margin-left: 0; }
+
+  table tr th {
+    min-width: 80px;
+    text-align: end; }
+
+  table tr td {
+    padding-left: 20px; }
+
+  .contact-us {
+    margin: 50px 0; }
+
+  .getintouch {
+    padding: 0 20px; }
+    .getintouch h4 {
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: 20px; }
+
+  .contact-us .contact-head {
+    text-align: center;
+    padding-top: 50px; }
+    .contact-us .contact-head h4 {
+      font-size: 20px; } }
 @media (max-width: 575px) {
   .section-header p {
     font-size: 13px;
@@ -1274,7 +1373,44 @@
 
   footer .footer-bg .footer-title {
     padding-top: 45px;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  .content-page .content-main {
+    padding: 20px; }
+
+  .breadcrumb .bg-overly {
+    padding-top: 50px !important; }
+
+  .content-page {
+    padding-top: 0;
+    margin-bottom: 60px; }
+
+  blockquote {
+    padding: 30px; }
+
+  table {
+    margin-left: 0; }
+
+  table tr th {
+    min-width: 60px;
+    text-align: start; }
+
+  table tr td {
+    padding-left: 0; }
+
+  .contact-us {
+    margin: 20px 0; }
+
+  .getintouch h4 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px; }
+
+  .contact-us .contact-head {
+    text-align: center;
+    padding-top: 50px; }
+    .contact-us .contact-head h4 {
+      font-size: 20px; } }
 @media (max-width: 480px) {
   .particles-js-canvas-el {
     height: 203px !important; } }
