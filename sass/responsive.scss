@@ -1451,6 +1451,10 @@ table tr th {
   margin-top: 15px;
 }
 
+.vbox-content {
+  margin: 200px 0 !important;
+}
+
 }
 
 // small device responsive
@@ -2330,10 +2334,16 @@ table tr td {
 .news-lists .news-item .news-text .info p {
   margin-top: 10px;
 }
+.vbox-content {
+  margin: 280px 0 !important;
+}
 }
 
 @media(max-width:480px){
   .particles-js-canvas-el{
     height: 203px !important;
+  }
+  .vbox-content {
+    margin: 300px 0 !important;
   }
 }

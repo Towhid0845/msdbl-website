@@ -1,0 +1,33 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.photo-gallery-view {
+  padding: 60px 0;
+
+  .gallery-item {
+    .image {
+      background-color: #ddd;
+      height: 218px;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+
+      i {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.vbox-next,
+.vbox-prev {
+  display: block !important;
+}
+
+.vbox-content {
+  margin: 200px 0 !important;
+}

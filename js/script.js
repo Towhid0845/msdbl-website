@@ -57,14 +57,21 @@ $(function ($) {
 			500
 		);
 	});
-
-
 	// venobox js
-	$(".venobox").venobox({
-		spinner: "three-bounce",
-		spinColor: "#02918c",
-		closeColor: "red",
-		// arrowsColor: "#02918c",
+	// $(".venobox").venobox({
+	// 	spinner: "three-bounce",
+	// 	spinColor: "#02918c",
+	// 	closeColor: "red",
+	// 	// arrowsColor: "#02918c",
+	// });
+
+	$(".parent-container").venobox({
+				numeration: true,
+				infinigall: true,
+				share: true,
+				navigation: true,
+				// spinner: 'wave'
+				spinner: 'rotating-plane'
 	});
 
 
@@ -346,36 +353,20 @@ $(".team-slide").slick({
 	  $(".sub-menu a").click(function () {
 		$(this).parent(".sub-menu").children("ul").slideToggle("100");
 		$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
-	  });
+		});
+// gallery popup js
+// $('.parent-container').magnificPopup({
+// 	delegate: 'a',
+// 	type: 'image',
+// 	gallery: {
+// 		enabled: true
+// 	},
+// 	removalDelay: 300,
+// 	mainClass: 'mfp-fade',
+// });
 
 });
 
 AOS.init({
 	duration: 1200,
 });
-
-
-// function process1Fun() {
-// 	document.getElementById("process1").style.display = "block";
-// 	document.getElementById("process2").style.display = "none";
-// 	document.getElementById("process3").style.display = "none";
-// 	document.getElementById("process4").style.display = "none";
-// }
-// function process2Fun() {
-// 	document.getElementById("process1").style.display = "none";
-// 	document.getElementById("process2").style.display = "block";
-// 	document.getElementById("process3").style.display = "none";
-// 	document.getElementById("process4").style.display = "none";
-// }
-// function process3Fun() {
-// 	document.getElementById("process1").style.display = "none";
-// 	document.getElementById("process2").style.display = "none";
-// 	document.getElementById("process3").style.display = "block";
-// 	document.getElementById("process4").style.display = "none";
-// }
-// function process4Fun() {
-// 	document.getElementById("process1").style.display = "none";
-// 	document.getElementById("process2").style.display = "none";
-// 	document.getElementById("process3").style.display = "none";
-// 	document.getElementById("process4").style.display = "block";
-// }

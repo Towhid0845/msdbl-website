@@ -1172,6 +1172,95 @@ footer .footer-bg {
         font-family: "FontAwesome";
         content: "\f105"; }
 
+.gallery-item {
+  background-color: #f2f2f2;
+  transition: all linear .2s;
+  border: 1px solid #ddd;
+  margin-bottom: 24px; }
+  .gallery-item .image {
+    overflow: hidden;
+    position: relative; }
+    .gallery-item .image i {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      color: #e41b2e;
+      font-size: 16px; }
+    .gallery-item .image img {
+      transition: all linear .2s; }
+  .gallery-item .text {
+    padding: 14px;
+    min-height: 116px; }
+    .gallery-item .text h6 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #414246;
+      line-height: 22px; }
+  .gallery-item:hover .image img {
+    transform: scale(1.1); }
+
+.pagination {
+  margin-top: 10px;
+  margin-bottom: 0 !important; }
+
+.pagination ul li {
+  display: inline-block;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1); }
+
+.pagination ul li.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 6px; }
+
+.pagination ul li.arrow a {
+  color: #414246;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 500;
+  transition: all linear .2s; }
+  .pagination ul li.arrow a i {
+    font-size: 14px; }
+  .pagination ul li.arrow a:hover {
+    background-color: #e41b2e;
+    color: #ffffff; }
+
+.pagination ul li.arrow:last-child {
+  margin-right: 0; }
+
+.pagination ul li.mid-pagi {
+  padding: 0 20px;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px; }
+
+.pagination ul li.mid-pagi a {
+  margin: 0 10px;
+  color: #232323; }
+
+.pagination ul li.mid-pagi a.active {
+  width: 25px;
+  height: 25px;
+  background-color: #e41b2e;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); }
+
 .contact-us {
   margin: 80px 0; }
   .contact-us .background-image {
@@ -1273,19 +1362,18 @@ footer .footer-bg {
     vertical-align: middle;
     font-weight: 900;
     font-size: 20px; }
-
-blockquote {
+.content-box blockquote {
   margin: 30px 0;
   padding: 20px 80px 20px 40px;
   background-color: #ffffff;
   border-bottom: 3px solid #e41b2e;
   position: relative; }
-  blockquote h4 {
+  .content-box blockquote h4 {
     font-size: 24px;
     font-weight: 600;
     color: #666666;
     line-height: 40px; }
-    blockquote h4::before {
+    .content-box blockquote h4::before {
       font-family: "Font Awesome 5 Free";
       content: "\f10d";
       color: #e41b2e;
@@ -1652,5 +1740,64 @@ table {
       transform: scaleX(1) !important; }
     .news-lists .news-item:hover img {
       transform: scaleX(1) !important; }
+
+.photo-gallery {
+  padding: 60px 0; }
+  .photo-gallery .image {
+    height: 218px; }
+    .photo-gallery .image img {
+      height: 100%;
+      object-fit: cover; }
+
+.photo-gallery-view {
+  padding: 60px 0; }
+  .photo-gallery-view .gallery-item .image {
+    background-color: #ddd;
+    height: 218px; }
+    .photo-gallery-view .gallery-item .image img {
+      object-fit: cover;
+      height: 100%; }
+    .photo-gallery-view .gallery-item .image i {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.vbox-next,
+.vbox-prev {
+  display: block !important; }
+
+.vbox-content {
+  margin: 200px 0 !important; }
+
+.service-list {
+  padding: 60px 0; }
+  .service-list .image {
+    width: 100%;
+    height: 300px;
+    position: relative; }
+    .service-list .image img {
+      width: 100%;
+      height: 100%; }
+  .service-list .overly {
+    position: absolute;
+    top: 210px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    overflow: hidden;
+    transition: .5s; }
+    .service-list .overly h3 {
+      margin-bottom: 30px; }
+      .service-list .overly h3 img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px; }
+    .service-list .overly p {
+      padding-bottom: 20px; }
+    .service-list .overly a:hover {
+      color: #e41b2e; }
+  .service-list .image:hover .overly {
+    top: 0; }
 
 /*# sourceMappingURL=style.css.map */

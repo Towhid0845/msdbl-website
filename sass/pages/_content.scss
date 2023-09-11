@@ -70,34 +70,31 @@
       }
     }
   }
-}
 
+  blockquote {
+    margin: 30px 0;
+    padding: 20px 80px 20px 40px;
+    background-color: $white;
+    border-bottom: 3px solid $theme;
+    position: relative;
 
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #666666;
+      line-height: 40px;
 
-
-
-blockquote {
-  margin: 30px 0;
-  padding: 20px 80px 20px 40px;
-  background-color: $white;
-  border-bottom: 3px solid $theme;
-  position: relative;
-
-  h4 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #666666;
-    line-height: 40px;
-
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f10d";
-      color: $theme;
-      display: inline-block;
-      padding-right: 30px;
-      font-size: 30px;
-    }
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f10d";
+        color: $theme;
+        display: inline-block;
+        padding-right: 30px;
+        font-size: 30px;
+      }
+      }
   }
+
 }
 
 table {
