@@ -203,7 +203,15 @@
       margin-top: 40px;
       border-top: 1px solid rgba(255, 255, 255, 0.1); }
       footer .footer-bg .footer-btm p {
-        font-size: 18px; } }
+        font-size: 18px;
+        }
+
+        /* peb venobox */
+        .vbox-close {
+          top: 100px;
+          right: 495px;
+        }
+        }
 @media (min-width: 1400px) and (max-width: 1799px) {
   body {
     font-size: 16px;
@@ -412,7 +420,15 @@
       margin-top: 40px;
       border-top: 1px solid rgba(255, 255, 255, 0.1); }
       footer .footer-bg .footer-btm p {
-        font-size: 18px; } }
+        font-size: 18px;
+        }
+
+        /* peb venobox */
+        .vbox-close {
+          top: 100px;
+          right: 360px;
+        }
+        }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .hero-pad {
     padding-top: 200px; }
@@ -460,7 +476,19 @@
   .news-lists .news-item .news-image {
     position: relative;
     width: 354px;
-    height: 244px; } }
+    height: 244px;
+    }
+
+    .vbox-content {
+      top: 10%;
+    }
+
+    /* peb venobox */
+    .vbox-close {
+      top: 175px;
+      right: 310px;
+    }
+    }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-pre-title {
     line-height: 22px; }
@@ -565,7 +593,9 @@
     height: 224px; }
 
   .breadcrumb .bg-overly {
-    padding-top: 100px !important; }
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+    }
 
   .content-page {
     padding-top: 30px;
@@ -578,8 +608,8 @@
     min-width: 120px;
     text-align: end; }
 
-  .getintouch {
-    padding: 0 40px; }
+  /* .getintouch {
+    padding: 0 40px; } */
     .getintouch h4 {
       text-align: center;
       padding-bottom: 20px;
@@ -601,7 +631,23 @@
     height: 200px; }
 
   .news-lists .news-item .news-text .info p {
-    margin-top: 15px; } }
+    margin-top: 15px;
+    }
+
+    .vbox-content {
+      top: 15%;
+    }
+
+    .vbox-container img {
+      width: 70%;
+    }
+
+    /* peb venobox */
+    .vbox-close {
+      top: 217px;
+      right: 187px;
+    }
+    }
 @media (min-width: 768px) and (max-width: 991px) {
   .section-header p {
     font-size: 13px;
@@ -836,7 +882,10 @@
     padding-bottom: 40px; }
 
   .breadcrumb .bg-overly {
-    padding-top: 80px !important; }
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+
+    }
 
   .content-page {
     padding-top: 30px;
@@ -875,10 +924,23 @@
     height: 200px; }
 
   .news-lists .news-item .news-text .info p {
-    margin-top: 15px; }
+    margin-top: 15px;
+    }
 
-  .vbox-content {
-    margin: 200px 0 !important; } }
+    .vbox-content {
+  top: 18%;
+  }
+
+  .vbox-container img {
+    width: 80%;
+  }
+
+  /* peb venobox */
+  .vbox-close {
+    top: 242px;
+    right: 107px;
+  }
+  }
 @media (min-width: 576px) and (max-width: 767px) {
   .section-header p {
     font-size: 13px;
@@ -1121,7 +1183,9 @@
     padding: 20px; }
 
   .breadcrumb .bg-overly {
-    padding-top: 50px !important; }
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+    }
 
   .content-page {
     padding-top: 0;
@@ -1166,7 +1230,24 @@
     height: 171px; }
 
   .news-lists .news-item .news-text .info p {
-    margin-top: 10px; } }
+    margin-top: 10px;
+    }
+
+    .vbox-content {
+      top: 25%;
+    }
+
+    .vbox-container img {
+      width: 80%;
+    }
+
+    /* peb venobox */
+    .vbox-close {
+      top: 301px;
+      right: 85px;
+    }
+
+    }
 @media (max-width: 575px) {
   .section-header p {
     font-size: 13px;
@@ -1423,7 +1504,9 @@
     padding: 20px; }
 
   .breadcrumb .bg-overly {
-    padding-top: 50px !important; }
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+    }
 
   .content-page {
     padding-top: 0;
@@ -1468,13 +1551,26 @@
   .news-lists .news-item .news-text .info p {
     margin-top: 10px; }
 
-  .vbox-content {
-    margin: 280px 0 !important; } }
+    .vbox-content {
+      top: 25%;
+      }
+
+      .vbox-container img {
+        width: 80%;
+      }
+
+      /* peb venobox */
+      .vbox-close {
+        top: 240px;
+        right: 12px;
+      }
+      }
 @media (max-width: 480px) {
   .particles-js-canvas-el {
     height: 203px !important; }
-
-  .vbox-content {
-    margin: 300px 0 !important; } }
+    .vbox-container img {
+      width: 80%;
+    }
+    }
 
 /*# sourceMappingURL=responsive.css.map */

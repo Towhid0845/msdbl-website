@@ -1156,7 +1156,9 @@ footer .footer-bg {
   background-repeat: no-repeat;
   margin-bottom: 0px; }
   .breadcrumb .bg-overly {
-    padding-top: 200px !important; }
+    padding-top: 100px !important;
+    padding-bottom: 40px;
+    }
   .breadcrumb .crumb {
     font-size: 10px;
     letter-spacing: 3px;
@@ -1304,7 +1306,7 @@ footer .footer-bg {
     margin-bottom: 20px;
     border: none;
     border-bottom: solid 2px #bbbbbb;
-    color: #bdc2c7;
+    color: #000000;
     background: none;
     border-radius: 0;
     height: auto;
@@ -1767,7 +1769,16 @@ table {
   display: block !important; }
 
 .vbox-content {
-  margin: 200px 0 !important; }
+  top: 0%;
+  }
+
+  .vbox-close {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 30px;
+    padding: 2px;
+  }
 
 .service-list {
   padding: 60px 0; }
