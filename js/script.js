@@ -57,22 +57,7 @@ $(function ($) {
 			500
 		);
 	});
-	// venobox js
-	// $(".venobox").venobox({
-	// 	spinner: "three-bounce",
-	// 	spinColor: "#02918c",
-	// 	closeColor: "red",
-	// 	// arrowsColor: "#02918c",
-	// });
 
-	$(".parent-container").venobox({
-				numeration: true,
-				infinigall: true,
-				share: true,
-				navigation: true,
-				// spinner: 'wave'
-				spinner: 'rotating-plane'
-	});
 
 
 	// video veno-box js
@@ -274,6 +259,23 @@ $(".team-slide").slick({
 		mainClass: "mfp-fade",
 	});
 
+	// $(".parent-container").venobox({
+	// 	numeration: true,
+	// 	infinigall: true,
+	// 	share: true,
+	// 	navigation: true,
+	// 	// spinner: 'wave'
+	// 	spinner: 'rotating-plane'
+	// });
+
+
+	// venobox js
+	// $(".venobox").venobox({
+	// 	spinner: "three-bounce",
+	// 	spinColor: "#02918c",
+	// 	closeColor: "red",
+	// 	// arrowsColor: "#02918c",
+	// });
 
 	// certificate slider js
 	$(".certificate-main").slick({

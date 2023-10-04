@@ -984,6 +984,9 @@
 
     .text {
       padding: 28px;
+    .plain-text.text-wrap {
+      padding: 10px 0 0 0;
+    }
     }
   }
 
@@ -994,6 +997,10 @@
   .social-item {
     .image {
       height: 224px;
+    }
+    .plain-text .text-wrap {
+      -webkit-line-clamp: 2 !important;
+      line-clamp: 2 !important;
     }
   }
 
@@ -1355,6 +1362,9 @@
     }
     .news-item .text {
       padding: 20px;
+      .plain-text.text-wrap {
+        padding: 10px 0 0 0;
+      }
     }
     .news-item .image .date {
       bottom: 10px;
@@ -1372,7 +1382,13 @@
       height: 164px;
     }
     .social-item .plain-text {
-      padding: 20px;
+      padding: 30px;
+
+      .text-wrap {
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+        padding: 10px 0 0 0;
+      }
     }
     .social-item .plain-text .read-more {
       margin-top: 10px;
@@ -1794,7 +1810,13 @@ table tr th {
       height: 391px;
     }
     .social-item .plain-text {
-      padding: 20px;
+      padding: 30px;
+
+      .text-wrap {
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+        padding: 10px 0 0 0;
+      }
     }
     .social-item .plain-text .read-more {
       margin-top: 10px;
@@ -2247,7 +2269,13 @@ table tr td {
       height: 391px;
     }
     .social-item .plain-text {
-      padding: 20px;
+      padding: 30px;
+
+      .text-wrap {
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+        padding: 10px 0 0 0;
+      }
     }
     .social-item .plain-text .read-more {
       margin-top: 10px;

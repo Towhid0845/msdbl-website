@@ -159,3 +159,23 @@ body {
 .fa-long-arrow-alt-up::before {
 	content: "\f30c";
 }
+// image overly date
+.image {
+	.date {
+		bottom: 20px;
+		right: 20px;
+
+		span {
+			display: inline-block;
+			background-color: #DC143C;
+			color: $white;
+			@include font(18px, 700);
+			width: 70px;
+			height: 70px;
+			padding: 13px;
+			border-radius: 50%;
+			line-height: 20px;
+			text-align: center;
+		}
+	}
+}

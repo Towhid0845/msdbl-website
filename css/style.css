@@ -128,6 +128,22 @@ body {
 .fa-long-arrow-alt-up::before {
   content: "\f30c"; }
 
+.image .date {
+  bottom: 20px;
+  right: 20px; }
+  .image .date span {
+    display: inline-block;
+    background-color: #DC143C;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 70px;
+    height: 70px;
+    padding: 13px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center; }
+
 .navbar {
   padding: 0 !important;
   position: relative;
@@ -887,20 +903,7 @@ video-part {
     object-position: center;
     transition: all .5s ease 0s; }
   .news-item .image .date {
-    bottom: 20px;
-    left: 20px; }
-    .news-item .image .date span {
-      display: inline-block;
-      background-color: #DC143C;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 700;
-      width: 70px;
-      height: 70px;
-      padding: 13px;
-      border-radius: 50%;
-      line-height: 20px;
-      text-align: center; }
+    left: 20px !important; }
 .news-item .text {
   background-color: #414246;
   padding: 30px; }
@@ -911,7 +914,7 @@ video-part {
     margin-bottom: 14px;
     color: #ffffff;
     transition: all linear .2s; }
-  .news-item .text .text-wrap {
+  .news-item .text .plain-text.text-wrap {
     -webkit-line-clamp: 2 !important;
     line-clamp: 2 !important;
     padding: 10px 0; }
@@ -1156,9 +1159,7 @@ footer .footer-bg {
   background-repeat: no-repeat;
   margin-bottom: 0px; }
   .breadcrumb .bg-overly {
-    padding-top: 100px !important;
-    padding-bottom: 40px;
-    }
+    padding-top: 200px !important; }
   .breadcrumb .crumb {
     font-size: 10px;
     letter-spacing: 3px;
@@ -1306,7 +1307,7 @@ footer .footer-bg {
     margin-bottom: 20px;
     border: none;
     border-bottom: solid 2px #bbbbbb;
-    color: #000000;
+    color: #bdc2c7;
     background: none;
     border-radius: 0;
     height: auto;
@@ -1769,16 +1770,7 @@ table {
   display: block !important; }
 
 .vbox-content {
-  top: 0%;
-  }
-
-  .vbox-close {
-    color: #000000 !important;
-    background-color: #ffffff !important;
-    width: 40px;
-    height: 30px;
-    padding: 2px;
-  }
+  margin: 200px 0 !important; }
 
 .service-list {
   padding: 60px 0; }
