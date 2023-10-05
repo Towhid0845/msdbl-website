@@ -650,7 +650,8 @@ video-part {
 .testimonial-slide .card {
   border-radius: 10px;
   cursor: pointer;
-  background-color: #333438; }
+  background-color: #333438;
+  height: 456px; }
 
 .testimonial-text .blockquote p {
   font-size: 15px; }

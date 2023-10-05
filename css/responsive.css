@@ -174,14 +174,17 @@
       height: 80px;
       padding: 15px;
       line-height: 20px; }
-  .news-item .text .title {
-    font-size: 22px;
-    font-weight: 600; }
+  .news-item .text {
+    height: 250px; }
+    .news-item .text .title {
+      font-size: 22px;
+      font-weight: 600; }
 
   .social-item .image {
     height: 316px; }
   .social-item .plain-text {
-    padding: 30px; }
+    padding: 30px;
+    height: 293px; }
     .social-item .plain-text .read-more {
       margin-top: 20px;
       padding-top: 14px; }
@@ -294,6 +297,9 @@
   .process .nav-pills .nav-item {
     padding: 12px; }
 
+  .testimonial-slide .card {
+    height: 446px; }
+
   .sm-img p {
     font-size: 18px;
     font-weight: 500; }
@@ -383,14 +389,17 @@
       height: 80px;
       padding: 15px;
       line-height: 20px; }
-  .news-item .text .title {
-    font-size: 22px;
-    font-weight: 600; }
+  .news-item .text {
+    height: 246px; }
+    .news-item .text .title {
+      font-size: 22px;
+      font-weight: 600; }
 
   .social-item .image {
     height: 316px; }
   .social-item .plain-text {
-    padding: 30px; }
+    padding: 30px;
+    height: 289px; }
     .social-item .plain-text .read-more {
       margin-top: 20px;
       padding-top: 14px; }
@@ -453,14 +462,23 @@
     .flip-card-back .read-more a {
       line-height: 30px; }
 
+  .testimonial-slide .card {
+    height: 424px; }
+
   .sm-img img {
     width: 100px;
     height: 100px; }
 
+  .news-item .text {
+    height: 236px; }
+
   .news-lists .news-item .news-image {
     position: relative;
     width: 354px;
-    height: 244px; } }
+    height: 244px; }
+
+  .social-item .plain-text {
+    height: 277px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-pre-title {
     line-height: 22px; }
@@ -502,6 +520,9 @@
         line-height: 22px; }
     .flip-card-back .read-more a {
       line-height: 30px; }
+
+  .testimonial-slide .card {
+    height: 404px; }
 
   .stat {
     padding: 70px 0; }
@@ -559,15 +580,18 @@
   .news-item .image {
     height: 234px; }
   .news-item .text {
+    height: 222px;
     padding: 28px; }
     .news-item .text .plain-text.text-wrap {
       padding: 10px 0 0 0; }
 
   .social-item .image {
     height: 224px; }
-  .social-item .plain-text .text-wrap {
-    -webkit-line-clamp: 2 !important;
-    line-clamp: 2 !important; }
+  .social-item .plain-text {
+    height: 251px; }
+    .social-item .plain-text .text-wrap {
+      -webkit-line-clamp: 2 !important;
+      line-clamp: 2 !important; }
 
   .breadcrumb .bg-overly {
     padding-top: 100px !important; }
@@ -737,6 +761,9 @@
   .process .nav-pills .nav-item {
     padding: 10px; }
 
+  .testimonial-slide .card {
+    height: 388px; }
+
   .stat {
     padding: 70px 0; }
 
@@ -808,6 +835,7 @@
     height: 171px; }
 
   .news-item .text {
+    height: 204px;
     padding: 20px; }
     .news-item .text .plain-text.text-wrap {
       padding: 10px 0 0 0; }
@@ -826,7 +854,8 @@
     height: 164px; }
 
   .social-item .plain-text {
-    padding: 30px; }
+    padding: 20px;
+    height: 207px; }
     .social-item .plain-text .text-wrap {
       -webkit-line-clamp: 2 !important;
       line-clamp: 2 !important;
@@ -835,6 +864,8 @@
   .social-item .plain-text .read-more {
     margin-top: 10px;
     padding-top: 10px; }
+    .social-item .plain-text .read-more a {
+      line-height: 30px; }
 
   footer .footer-bg {
     padding: 20px 0 0px 0; }
@@ -1020,6 +1051,11 @@
 
   .testimonial {
     padding: 40px 0 80px; }
+    .testimonial .testimonial-text .blockquote {
+      padding: 15px; }
+
+  .testimonial-slide .card {
+    height: 414px; }
 
   .stat {
     padding: 40px 0; }
@@ -1099,6 +1135,9 @@
   .news-item .image {
     height: 409px; }
 
+  .news-item .text {
+    height: 195px; }
+
   .certificate {
     padding: 40px 0; }
 
@@ -1109,7 +1148,8 @@
     height: 391px; }
 
   .social-item .plain-text {
-    padding: 30px; }
+    padding: 30px;
+    height: 191px; }
     .social-item .plain-text .text-wrap {
       -webkit-line-clamp: 2 !important;
       line-clamp: 2 !important;
@@ -1319,6 +1359,13 @@
   .testimonial {
     padding: 25px 0 60px; }
 
+  .testimonial-slide .card {
+    height: 444px; }
+
+  .sm-img img {
+    width: 100px;
+    height: 100px; }
+
   .stat {
     padding: 25px 0; }
 
@@ -1402,6 +1449,9 @@
   .news-item .image {
     height: 409px; }
 
+  .news-item .text {
+    height: 190px; }
+
   .certificate {
     padding: 40px 0; }
 
@@ -1418,7 +1468,8 @@
     height: 391px; }
 
   .social-item .plain-text {
-    padding: 30px; }
+    padding: 30px;
+    height: 189px; }
     .social-item .plain-text .text-wrap {
       -webkit-line-clamp: 2 !important;
       line-clamp: 2 !important;
